@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:stone_sword",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"complus.name.katana","color":"white","italic":false,"with":[{"translate":"complus.resource.stone"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{complus_id: 12, CustomModelData: 6420012, HideFlags: 34, complus_decay:1b, complus_decay_level:2}"
+            },
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_speed","color":"dark_green","italic":false,"with":[3]},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[4]},{"translate":"complus.lore.attack_decay","color":"dark_green","italic":false,"with":[2]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			},
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.attackDamage",
+						"attribute":"generic.attackDamage",
+						"operation":"addition",
+						"amount":4,
+						"slot":"mainhand"
+					},
+					{
+						"name":"generic.attackSpeed",
+						"attribute":"generic.attackSpeed",
+						"operation":"addition",
+						"amount":-1,
+						"slot":"mainhand"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

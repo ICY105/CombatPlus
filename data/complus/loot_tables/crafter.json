@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:smoker",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"complus.name.crafter","color":"white","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{complus_id: 1, CustomModelData: 6420001, HideFlags: 32, BlockEntityTag: {Lock: \"§complus\"}}"
+            },
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

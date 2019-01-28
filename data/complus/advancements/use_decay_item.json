@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "use_decay_item","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+        "use_decay_item": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+                "item": {
+					"nbt": "{complus_decay:1b}"
+                }
+            }
+		}
+    },
+	"rewards":{ 
+		"function":"complus:player/use_decay_item"
+	},
+	"parent":"du:base"
+}

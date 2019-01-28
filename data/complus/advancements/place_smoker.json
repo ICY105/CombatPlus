@@ -1,0 +1,23 @@
+{
+	"display": {
+		"title": "place_smoker","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+        "place_block": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+                "item": {
+                    "item": "minecraft:smoker",
+					"nbt": "{BlockEntityTag: {Lock: \"§complus\"}}"
+                }
+            }
+		}
+    },
+	"rewards":{ 
+		"function":"complus:player/place_smoker"
+	},
+	"parent":"du:base"
+}

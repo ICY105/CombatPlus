@@ -1,0 +1,12 @@
+{
+    "parent": "complus:block",
+    "textures": {
+        "particle": "complus:item/crafter_front",
+        "down": "block/stone",
+        "up": "complus:item/crafter_top",
+        "north": "complus:item/crafter_front",
+        "east": "complus:item/crafter_side",
+        "south": "complus:item/crafter_side",
+        "west": "complus:item/crafter_front"
+    }
+}

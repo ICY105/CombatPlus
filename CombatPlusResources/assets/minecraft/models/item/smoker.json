@@ -1,0 +1,7 @@
+{
+    "parent": "block/blast_furnace",
+    "overrides": [
+		{ "predicate": { "custom_model_data": 6420001 }, "model": "complus:item/crafter" },
+		{ "predicate": { "custom_model_data": 6420002 }, "model": "complus:item/invisible" }
+	]
+}

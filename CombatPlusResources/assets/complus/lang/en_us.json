@@ -1,0 +1,16 @@
+{
+    "complus.name.crafter": "Armory Table",
+	
+	"complus.name.katana":"%s Katana",
+	
+	"complus.resource.wooden":"Wooden",
+	"complus.resource.golden":"Golden",
+	"complus.resource.stone":"Stone",
+	"complus.resource.iron":"Iron",
+	"complus.resource.diamond":"Diamond",
+	
+	"complus.lore.added_by": "Added by: Combat+",
+	"complus.lore.attack_speed": " %f Attack Speed",
+	"complus.lore.attack_damage": " %f Attack Damage",
+	"complus.lore.attack_decay": " %f Attack Decay"
+}

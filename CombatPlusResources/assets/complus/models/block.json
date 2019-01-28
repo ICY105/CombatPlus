@@ -1,0 +1,10 @@
+{
+	"parent":"block/cube",
+	"display": {
+        "head": {
+            "rotation": [ 0, 0, 0 ],
+            "translation": [ 0, -43.22, 0 ],
+            "scale": [ 1.601, 1.601, 1.601 ]
+        }
+	}
+}

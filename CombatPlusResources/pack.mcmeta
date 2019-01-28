@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 4,
+    "description": "Combat+ Resourcepack"
+  },
+  "language": {
+    "en_us":{
+	  "name": "English",
+      "region": "United States",
+      "bidirectional": false
+	}
+  }
+}

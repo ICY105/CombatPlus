@@ -1,0 +1,19 @@
+{
+    "providers": [
+        {
+			"credit":"Amber on /r/MinecraftCommands discord for these useful negative space fonts.",
+            "type": "ttf",
+            "file": "neg_space_font:negative_spaces.ttf",
+            "shift": [0.0, 0.0],
+            "size": 10.0,
+            "oversample": 1.0
+        },
+		{
+            "type": "bitmap",
+            "file": "complus:gui/crafter_gui.png",
+			"ascent": 13,
+			"height": 256,
+			"chars": ["\uef00"]
+        }
+    ]
+}

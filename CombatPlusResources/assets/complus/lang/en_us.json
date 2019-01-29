@@ -1,7 +1,10 @@
 {
+	"item.minecraft.witch_spawn_egg":"Armory Table",
+	
     "complus.name.crafter": "Armory Table",
 	
 	"complus.name.katana":"%s Katana",
+	"complus.name.knife":"%s Knife",
 	
 	"complus.resource.wooden":"Wooden",
 	"complus.resource.golden":"Golden",

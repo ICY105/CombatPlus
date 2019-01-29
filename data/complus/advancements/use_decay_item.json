@@ -10,7 +10,7 @@
 			"trigger": "minecraft:item_durability_changed",
 			"conditions": {
                 "item": {
-					"nbt": "{complus_decay:1b}"
+					"nbt": "{complus_decay:{}}"
                 }
             }
 		}

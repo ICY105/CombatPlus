@@ -1,34 +1,22 @@
-tp @s ~ ~ ~ ~ ~
 
-execute store result score in_3 du_data run data get entity @s Pos[0] 100
-execute store result score in_4 du_data run data get entity @s Pos[1] 100
-execute store result score in_5 du_data run data get entity @s Pos[2] 100
+execute store result score in_0 du_data run data get entity @s Pos[0] 100
+execute store result score in_1 du_data run data get entity @s Pos[1] 100
+execute store result score in_2 du_data run data get entity @s Pos[2] 100
 
-scoreboard players operation in_3 du_data -= in_0 du_data
-scoreboard players operation in_4 du_data -= in_1 du_data
-scoreboard players operation in_5 du_data -= in_2 du_data
+function du:player/inv/get_hands
 
-scoreboard players remove in_4 du_data 161
+scoreboard players set temp_1 du_data 0
+execute if score @s complus_hold_off matches 15..19 unless score @s complus_holding matches 15..19 run scoreboard players set temp_1 du_data 2
+execute if score @s complus_hold_off matches 15..19 unless score @s complus_holding matches 15..19 run replaceitem entity @s[gamemode=!creative] weapon.offhand air
 
-scoreboard players set temp_0 du_data 3
+execute if score @s complus_holding matches 15..19 run scoreboard players set temp_1 du_data 1
+execute if score @s complus_holding matches 15..19 run replaceitem entity @s[gamemode=!creative] weapon.mainhand air
 
-scoreboard players operation in_3 du_data *= temp_0 du_data
-scoreboard players operation in_4 du_data *= temp_0 du_data
-scoreboard players operation in_5 du_data *= temp_0 du_data
 
-#execute store result entity @s Motion[0] double 0.01 run scoreboard players get in_3 du_data
-#execute store result entity @s Motion[1] double 0.01 run scoreboard players get in_4 du_data
-#execute store result entity @s Motion[2] double 0.01 run scoreboard players get in_5 du_data
+execute if entity @s[y_rotation=-179.99..-135] positioned ~ ~0.61 ~ run summon armor_stand ^ ^ ^1 {Rotation:[180.0f,0.0f],Tags:["complus_new_knife"],HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{}},{}],DisabledSlots:4144959,Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Pose:{RightArm:[-10f,0f,-40f]}}
+execute if entity @s[y_rotation=135..179.99] positioned ~ ~0.61 ~ run summon armor_stand ^ ^ ^1 {Rotation:[180.0f,0.0f],Tags:["complus_new_knife"],HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{}},{}],DisabledSlots:4144959,Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Pose:{RightArm:[-10f,0f,-40f]}}
+execute if entity @s[y_rotation=-135..-45] positioned ~ ~0.61 ~ run summon armor_stand ^ ^ ^1 {Rotation:[-90.0f,0.0f],Tags:["complus_new_knife"],HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{}},{}],DisabledSlots:4144959,Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Pose:{RightArm:[-10f,0f,-40f]}}
+execute if entity @s[y_rotation=-45..45] positioned ~ ~0.61 ~ run summon armor_stand ^ ^ ^1 {Rotation:[0.0f,0.0f],Tags:["complus_new_knife"],HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{}},{}],DisabledSlots:4144959,Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Pose:{RightArm:[-10f,0f,-40f]}}
+execute if entity @s[y_rotation=45..135] positioned ~ ~0.61 ~ run summon armor_stand ^ ^ ^1 {Rotation:[90.0f,0.0f],Tags:["complus_new_knife"],HandItems:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{}},{}],DisabledSlots:4144959,Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Pose:{RightArm:[-10f,0f,-40f]}}
 
-tag @s remove complus_new_knife
-tag @s add complus_knife
-execute if score temp_1 du_data matches 15 run tag @s add complus_wooden_knife
-execute if score temp_1 du_data matches 15 store success entity @s HandItems[0].tag.CustomModelData int 6420015 if entity @s
-execute if score temp_1 du_data matches 16 run tag @s add complus_golden_knife
-execute if score temp_1 du_data matches 16 store success entity @s HandItems[0].tag.CustomModelData int 6420016 if entity @s
-execute if score temp_1 du_data matches 17 run tag @s add complus_stone_knife
-execute if score temp_1 du_data matches 17 store success entity @s HandItems[0].tag.CustomModelData int 6420017 if entity @s
-execute if score temp_1 du_data matches 18 run tag @s add complus_iron_knife
-execute if score temp_1 du_data matches 18 store success entity @s HandItems[0].tag.CustomModelData int 6420018 if entity @s
-execute if score temp_1 du_data matches 19 run tag @s add complus_diamond_knife
-execute if score temp_1 du_data matches 19 store success entity @s HandItems[0].tag.CustomModelData int 6420019 if entity @s
+execute if score temp_1 du_data matches 1..2 rotated as @s as @e[tag=complus_new_knife] positioned as @s run function complus:player/throw_knife_2

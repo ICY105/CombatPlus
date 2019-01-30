@@ -4,6 +4,10 @@
         "layer0": "item/carrot_on_a_stick"
     },
     "overrides": [
-		
+		{ "predicate": { "custom_model_data": 6420015 }, "model": "complus:item/wooden_knife" },
+		{ "predicate": { "custom_model_data": 6420016 }, "model": "complus:item/golden_knife" },
+		{ "predicate": { "custom_model_data": 6420017 }, "model": "complus:item/stone_knife" },
+		{ "predicate": { "custom_model_data": 6420018 }, "model": "complus:item/iron_knife" },
+		{ "predicate": { "custom_model_data": 6420019 }, "model": "complus:item/diamond_knife" }
 	]
 }

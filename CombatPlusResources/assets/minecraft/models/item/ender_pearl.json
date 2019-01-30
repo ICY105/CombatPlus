@@ -1,7 +1,7 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "item/snowball"
+        "layer0": "item/ender_pearl"
     },
     "overrides": [
 		{ "predicate": { "custom_model_data": 6420015 }, "model": "complus:item/wooden_knife" },

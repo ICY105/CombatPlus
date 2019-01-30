@@ -1,5 +1,5 @@
 
-scoreboard players set in_0 du_data 10
+scoreboard players set in_0 du_data 15
 function complus:proj/knife_loop
 
 scoreboard players set temp_0 du_data 0

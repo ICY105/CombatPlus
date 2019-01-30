@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:snowball",
+		  "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
 			  "function": "minecraft:set_name",
@@ -14,11 +14,11 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{complus_id: 17, CustomModelData: 6420017, HideFlags: 34}"
+              "tag":"{complus_id: 17, CustomModelData: 6420017, du_dur:{enabled:1b,max_dur:32}, HideFlags: 34}"
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_speed","color":"dark_green","italic":false,"with":[2]},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[2]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_speed","color":"dark_green","italic":false,"with":[2]},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[3]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",
@@ -27,7 +27,7 @@
 						"name":"generic.attackDamage",
 						"attribute":"generic.attackDamage",
 						"operation":"addition",
-						"amount":2,
+						"amount":3,
 						"slot":"mainhand",
 						"id": "64200000-0001-0000-0000-64200000000"
 					},

@@ -1,0 +1,2 @@
+tellraw @s [{"translate":"You don't have Combat+'s resourcepack installed. Click here to go to the download page.","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/CombatPlus/releases"}}]
+tellraw @s [{"translate":"combatplus.nex.info","color":"dark_green"},{"text":"github","color":"green","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/CombatPlus"}},{"text":".","color":"dark_green"}]

@@ -15,5 +15,8 @@
 	"complus.lore.added_by": "Added by: Combat+",
 	"complus.lore.attack_speed": " %f Attack Speed",
 	"complus.lore.attack_damage": " %f Attack Damage",
-	"complus.lore.attack_decay": " %f Attack Decay"
+	"complus.lore.attack_decay": " %f Attack Decay",
+	
+	"You don't have Combat+'s resourcepack installed. Click here to go to the download page.": "",
+	"combatplus.nex.info": "You are running Combat+ by ICY105. Learn more about it on my "
 }

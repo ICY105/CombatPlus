@@ -14,11 +14,11 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{complus_id: 14, CustomModelData: 6420014, HideFlags: 34, complus_decay:{amount:1, base: 5}}"
+              "tag":"{complus_id: 14, CustomModelData: 6420014, HideFlags: 34, complus_decay:{amount:1, base: 7}}"
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[5]},{"translate":"complus.lore.attack_decay","color":"dark_green","italic":false,"with":[1]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[7]},{"translate":"complus.lore.attack_decay","color":"dark_green","italic":false,"with":[1]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",
@@ -27,7 +27,7 @@
 						"name":"generic.attackDamage",
 						"attribute":"generic.attackDamage",
 						"operation":"addition",
-						"amount":5,
+						"amount":7,
 						"slot":"mainhand"
 					},
 					{

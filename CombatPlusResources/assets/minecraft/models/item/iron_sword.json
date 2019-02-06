@@ -4,6 +4,8 @@
         "layer0": "item/iron_sword"
     },
     "overrides": [
-		{ "predicate": { "custom_model_data": 6420013 }, "model": "complus:item/iron_katana" }
+		{ "predicate": { "custom_model_data": 6420013 }, "model": "complus:item/iron_katana" },
+		{ "predicate": { "custom_model_data": 6420023 }, "model": "complus:item/iron_spear" },
+		{ "predicate": { "custom_model_data": 6420028 }, "model": "complus:item/iron_sickle" }
 	]
 }

@@ -5,6 +5,9 @@
 	
 	"complus.name.katana":"%s Katana",
 	"complus.name.knife":"%s Knife",
+	"complus.name.spear":"%s Spear",
+	"complus.name.scythe":"%s Scythe",
+	"complus.name.sickle":"%s Sickle",
 	
 	"complus.resource.wooden":"Wooden",
 	"complus.resource.golden":"Golden",
@@ -16,6 +19,9 @@
 	"complus.lore.attack_speed": " %f Attack Speed",
 	"complus.lore.attack_damage": " %f Attack Damage",
 	"complus.lore.attack_decay": " %f Attack Decay",
+	
+	"complus.lore.no_cooldown": "No Cooldown (1.8)",
+	"complus.lore.modified_cooldown": "Linear 1.9 Cooldown",
 	
 	"You don't have Combat+'s resourcepack installed. Click here to go to the download page.": "",
 	"combatplus.nex.info": "You are running Combat+ by ICY105. Learn more about it on my "

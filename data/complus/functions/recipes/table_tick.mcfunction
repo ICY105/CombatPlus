@@ -4,5 +4,5 @@ execute unless block ~ ~ ~ minecraft:barrel run loot spawn ~ ~ ~ loot complus:cr
 
 data merge entity @s {Fire:32000s}
 
-data modify block ~ ~ ~ Items[{tag:{du_gui:1b}}].id set value "minecraft:smoker"
+data modify block ~ ~ ~ Items[{tag:{du_gui:1b}}].id set value "minecraft:blast_furnace"
 data modify block ~ ~ ~ Items[{tag:{du_gui:1b}}].tag set value {CustomModelData:6420002,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}

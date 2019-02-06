@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:stone_sword",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"complus.name.sickle","color":"white","italic":false,"with":[{"translate":"complus.resource.stone"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{complus_id: 27, CustomModelData: 6420027, HideFlags: 34, complus_linear:{base: 4, speed:1.6, kb:0b}, complus_sickle:1b}"
+            },
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"complus.lore.modified_cooldown","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[4]},{"translate":"complus.lore.attack_speed","color":"dark_green","italic":false,"with":[1.6]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			},
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.attackDamage",
+						"attribute":"generic.attackDamage",
+						"operation":"addition",
+						"amount":4,
+						"slot":"mainhand"
+					},
+					{
+						"name":"generic.attackSpeed",
+						"attribute":"generic.attackSpeed",
+						"operation":"addition",
+						"amount":1024,
+						"slot":"mainhand"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

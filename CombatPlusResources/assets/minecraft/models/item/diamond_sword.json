@@ -4,6 +4,8 @@
         "layer0": "item/diamond_sword"
     },
     "overrides": [
-		{ "predicate": { "custom_model_data": 6420014 }, "model": "complus:item/diamond_katana" }
+		{ "predicate": { "custom_model_data": 6420014 }, "model": "complus:item/diamond_katana" },
+		{ "predicate": { "custom_model_data": 6420024 }, "model": "complus:item/diamond_spear" },
+		{ "predicate": { "custom_model_data": 6420029 }, "model": "complus:item/diamond_sickle" }
 	]
 }

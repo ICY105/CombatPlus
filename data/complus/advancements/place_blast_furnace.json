@@ -1,6 +1,6 @@
 {
 	"display": {
-		"title": "place_smoker","description": "","icon": {"item": "minecraft:stone"},
+		"title": "place_blast_furnace","description": "","icon": {"item": "minecraft:stone"},
 		"hidden":true,
 		"show_toast": false,
 		"announce_to_chat": false
@@ -10,14 +10,14 @@
 			"trigger": "minecraft:placed_block",
 			"conditions": {
                 "item": {
-                    "item": "minecraft:smoker",
+                    "item": "minecraft:blast_furnace",
 					"nbt": "{BlockEntityTag: {Lock: \"§complus\"}}"
                 }
             }
 		}
     },
 	"rewards":{ 
-		"function":"complus:player/place_smoker"
+		"function":"complus:player/place_blast_furnace"
 	},
 	"parent":"du:base"
 }

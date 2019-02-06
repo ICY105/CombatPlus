@@ -16,7 +16,7 @@
 		}
     },
 	"rewards":{ 
-		"function":"complus:player/use_decay_item"
+		"function":"complus:player/decay_attack"
 	},
 	"parent":"du:base"
 }

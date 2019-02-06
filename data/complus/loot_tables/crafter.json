@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:smoker",
+		  "name": "minecraft:blast_furnace",
           "functions": [
             {
 			  "function": "minecraft:set_name",

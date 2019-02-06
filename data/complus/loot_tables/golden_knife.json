@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{complus_id: 16, CustomModelData: 6420016, du_dur:{enabled:1b,max_dur:8}, HideFlags: 34}"
+              "tag":"{complus_id: 16, CustomModelData: 6420016, du_dur:{enabled:1b,max_dur:8}, complus_knife:1b, HideFlags: 34}"
             },
 			{
 			  "function": "minecraft:set_lore",

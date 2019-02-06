@@ -1,3 +1,3 @@
 
-execute if score in_0 du_data matches 1 run summon armor_stand ~ ~ ~ {Tags:["complus_crafter","du_crafter"],Marker:1b,Fire:32676,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:smoker",Count:1b,tag:{CustomModelData:6420001}}]}
+execute if score in_0 du_data matches 1 run summon armor_stand ~ ~ ~ {Tags:["complus_crafter","du_crafter"],Marker:1b,Fire:32676,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6420001}}]}
 execute if score in_0 du_data matches 1 run setblock ~ ~ ~ minecraft:barrel{CustomName:"[{\"translate\":\"offset.-8\",\"with\":[{\"text\":\"\\uef00\",\"color\":\"white\"}]},{\"translate\":\"offset.-128\",\"with\":[{\"translate\":\"offset.-77\",\"with\":[{\"translate\":\"complus.name.crafter\",\"color\":\"light_gray\",\"italic\":false}]}]}]"}

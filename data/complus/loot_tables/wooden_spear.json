@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"complus.name.spear","color":"white","italic":false,"with":[{"translate":"complus.resource.diamond"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{complus_id: 20, CustomModelData: 6420020, du_dur:{enabled:1b,max_dur:29}, complus_spear:1b, HideFlags: 34}"
+            },
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"complus.lore.no_cooldown","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[2.5]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			},
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.attackDamage",
+						"attribute":"generic.attackDamage",
+						"operation":"addition",
+						"amount":2.5,
+						"slot":"mainhand"
+					},
+					{
+						"name":"generic.attackSpeed",
+						"attribute":"generic.attackSpeed",
+						"operation":"addition",
+						"amount":1024,
+						"slot":"mainhand"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

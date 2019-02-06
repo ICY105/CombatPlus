@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "use_linear_item","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+        "use_decay_item": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+                "item": {
+					"nbt": "{complus_linear:{}}"
+                }
+            }
+		}
+    },
+	"rewards":{ 
+		"function":"complus:player/linear_attack"
+	},
+	"parent":"du:base"
+}

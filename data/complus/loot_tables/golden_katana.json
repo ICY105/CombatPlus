@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{complus_id: 11, CustomModelData: 6420011, HideFlags: 34, complus_decay:{amount:2, base: 4}}"
+              "tag":"{complus_id: 11, CustomModelData: 6420011, HideFlags: 34, complus_decay:{amount:2, base: 4}, complus_katana:1b}"
             },
 			{
 			  "function": "minecraft:set_lore",
@@ -34,7 +34,7 @@
 						"name":"generic.attackSpeed",
 						"attribute":"generic.attackSpeed",
 						"operation":"addition",
-						"amount":4,
+						"amount":1024,
 						"slot":"mainhand"
 					}
 				]

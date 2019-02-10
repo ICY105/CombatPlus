@@ -1,6 +1,7 @@
 
 execute store result score in_0 du_data run data get entity @s SelectedItem.tag.complus_decay.amount
 execute store result score in_1 du_data run data get entity @s SelectedItem.tag.complus_decay.base
+scoreboard players remove in_1 du_data 1
 
 #edit damage
 function du:player/inv/get_hands

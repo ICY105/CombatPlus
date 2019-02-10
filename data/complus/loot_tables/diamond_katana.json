@@ -27,7 +27,7 @@
 						"name":"generic.attackDamage",
 						"attribute":"generic.attackDamage",
 						"operation":"addition",
-						"amount":7,
+						"amount":6,
 						"slot":"mainhand"
 					},
 					{

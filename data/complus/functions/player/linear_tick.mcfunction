@@ -44,6 +44,7 @@ function du:player/inv/get_hands
 
 execute store result score in_2 du_data run data get block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount
 scoreboard players operation in_0 du_data *= temp_1 du_data
+scoreboard players remove in_0 du_data 100
 execute if score in_2 du_data <= in_1 du_data store result block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount double 0.01 run scoreboard players get in_0 du_data
 
 function du:player/inv/restore_hands

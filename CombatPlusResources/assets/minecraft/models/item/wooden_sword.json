@@ -5,7 +5,7 @@
     },
     "overrides": [
 		{ "predicate": { "custom_model_data": 6420010 }, "model": "complus:item/wooden_katana" },
-		{ "predicate": { "custom_model_data": 6420020 }, "model": "complus:item/wooden_spear" },
-		{ "predicate": { "custom_model_data": 6420025 }, "model": "complus:item/wooden_sickle" }
+		{ "predicate": { "custom_model_data": 6420025 }, "model": "complus:item/wooden_sickle" },
+		{ "predicate": { "custom_model_data": 6420030 }, "model": "complus:item/wooden_scythe" }
 	]
 }

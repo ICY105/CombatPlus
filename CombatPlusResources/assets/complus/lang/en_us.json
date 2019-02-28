@@ -8,6 +8,7 @@
 	"complus.name.spear":"%s Spear",
 	"complus.name.scythe":"%s Scythe",
 	"complus.name.sickle":"%s Sickle",
+	"complus.name.arc_star":"%s Arc Star",
 	
 	"complus.resource.wooden":"Wooden",
 	"complus.resource.golden":"Golden",
@@ -20,8 +21,10 @@
 	"complus.lore.attack_damage": " %f Attack Damage",
 	"complus.lore.attack_decay": " %f Attack Decay",
 	
+	"complus.lore.damage_decay": "Damage Decay",
 	"complus.lore.no_cooldown": "No Cooldown (1.8)",
 	"complus.lore.modified_cooldown": "Linear 1.9 Cooldown",
+	"complus.lore.modified_cooldown_kb": "+Knockback",
 	
 	"You don't have Combat+'s resourcepack installed. Click here to go to the download page.": "",
 	"combatplus.nex.info": "You are running Combat+ by ICY105. Learn more about it on my "

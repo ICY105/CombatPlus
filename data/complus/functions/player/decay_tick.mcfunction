@@ -7,6 +7,8 @@ execute if score timer_100 du_data matches 50 run function complus:player/decay_
 execute store result score in_0 du_data run data get entity @s SelectedItem.tag.complus_decay.base 1
 execute store result score in_1 du_data run data get entity @s SelectedItem.tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount 100
 
+scoreboard players remove in_0 du_data 1
+
 scoreboard players operation in_1 du_data /= in_0 du_data
 scoreboard players set temp_0 du_data 100
 scoreboard players operation temp_0 du_data -= in_1 du_data

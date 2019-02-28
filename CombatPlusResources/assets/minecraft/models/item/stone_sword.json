@@ -5,7 +5,7 @@
     },
     "overrides": [
 		{ "predicate": { "custom_model_data": 6420012 }, "model": "complus:item/stone_katana" },
-		{ "predicate": { "custom_model_data": 6420022 }, "model": "complus:item/stone_spear" },
-		{ "predicate": { "custom_model_data": 6420027 }, "model": "complus:item/stone_sickle" }
+		{ "predicate": { "custom_model_data": 6420027 }, "model": "complus:item/stone_sickle" },
+		{ "predicate": { "custom_model_data": 6420032 }, "model": "complus:item/stone_scythe" }
 	]
 }

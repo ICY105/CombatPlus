@@ -5,7 +5,7 @@
     },
     "overrides": [
 		{ "predicate": { "custom_model_data": 6420011 }, "model": "complus:item/golden_katana" },
-		{ "predicate": { "custom_model_data": 6420021 }, "model": "complus:item/golden_spear" },
-		{ "predicate": { "custom_model_data": 6420026 }, "model": "complus:item/golden_sickle" }
+		{ "predicate": { "custom_model_data": 6420026 }, "model": "complus:item/golden_sickle" },
+		{ "predicate": { "custom_model_data": 6420031 }, "model": "complus:item/golden_scythe" }
 	]
 }

@@ -4,8 +4,12 @@ execute if data entity @s SelectedItem.tag.complus_decay run function complus:pl
 execute if data entity @s SelectedItem.tag.complus_linear run function complus:player/linear_tick
 
 #knives
-execute if entity @s[scores={complus_coas=1..}] if data entity @s SelectedItem.tag.complus_knife run function complus:player/throw_knife
 execute if entity @s[scores={complus_coas=1..}] if data entity @s Inventory[{Slot:-106b}].tag.complus_knife unless data entity @s SelectedItem.tag.complus_knife run function complus:player/throw_knife
+execute if entity @s[scores={complus_coas=1..}] if data entity @s SelectedItem.tag.complus_knife run function complus:player/throw_knife
+
+#arc star
+execute if entity @s[scores={complus_coas=1..}] if data entity @s Inventory[{Slot:-106b}].tag.complus_arc_star unless data entity @s SelectedItem.tag.complus_arc_star run function complus:player/throw_arc_star
+execute if entity @s[scores={complus_coas=1..}] if data entity @s SelectedItem.tag.complus_arc_star run function complus:player/throw_arc_star
 
 #reset scores
 execute unless data entity @s SelectedItem.tag.complus_linear run scoreboard players set @s complus_cooldown 0

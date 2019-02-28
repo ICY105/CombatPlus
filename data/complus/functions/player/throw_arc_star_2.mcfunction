@@ -25,6 +25,6 @@ scoreboard players operation in_3 du_data *= temp_0 du_data
 scoreboard players operation in_4 du_data *= temp_0 du_data
 scoreboard players operation in_5 du_data *= temp_0 du_data
 
-tag @s remove complus_new_knife
-tag @s add complus_knife
+tag @s remove complus_new_arc_star
+tag @s add complus_arc_star
 

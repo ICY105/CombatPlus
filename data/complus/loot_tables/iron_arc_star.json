@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"complus.name.arc_star","color":"white","italic":false,"with":[{"translate":"complus.resource.iron"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{complus_id: 38, CustomModelData: 6420038, complus_arc_star:1b, HideFlags: 34}"
+            },
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

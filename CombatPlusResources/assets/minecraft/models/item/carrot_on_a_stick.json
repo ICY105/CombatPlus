@@ -14,6 +14,12 @@
 		{ "predicate": { "custom_model_data": 6420021 }, "model": "complus:item/golden_spear" },
 		{ "predicate": { "custom_model_data": 6420022 }, "model": "complus:item/stone_spear" },
 		{ "predicate": { "custom_model_data": 6420023 }, "model": "complus:item/iron_spear" },
-		{ "predicate": { "custom_model_data": 6420024 }, "model": "complus:item/diamond_spear" }
+		{ "predicate": { "custom_model_data": 6420024 }, "model": "complus:item/diamond_spear" },
+		
+		{ "predicate": { "custom_model_data": 6420035 }, "model": "complus:item/wooden_arc_star" },
+		{ "predicate": { "custom_model_data": 6420036 }, "model": "complus:item/golden_arc_star" },
+		{ "predicate": { "custom_model_data": 6420037 }, "model": "complus:item/stone_arc_star" },
+		{ "predicate": { "custom_model_data": 6420038 }, "model": "complus:item/iron_arc_star" },
+		{ "predicate": { "custom_model_data": 6420039 }, "model": "complus:item/diamond_arc_star" }
 	]
 }

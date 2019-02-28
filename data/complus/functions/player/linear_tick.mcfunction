@@ -39,12 +39,15 @@ execute if score temp_1 du_data matches 8..14 run title @s title {"text":"\uef12
 execute if score temp_1 du_data matches 1..7 run title @s title {"text":"\uef11"}
 execute if score temp_1 du_data matches ..0 run title @s title {"text":"\uef10"}
 
-#edit damage
-function du:player/inv/get_hands
+#edit stats
+function du:player/inv/get_equipment
 
-execute store result score in_2 du_data run data get block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount
+execute if score in_2 du_data matches 1 if score temp_1 du_data matches 100.. run function complus:player/linear_kb_add
+execute if score in_2 du_data matches 2 if score temp_1 du_data matches ..99 run function complus:player/linear_kb_remove
+
+execute store result score in_3 du_data run data get block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount
 scoreboard players operation in_0 du_data *= temp_1 du_data
 scoreboard players remove in_0 du_data 100
-execute if score in_2 du_data <= in_1 du_data store result block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount double 0.01 run scoreboard players get in_0 du_data
+execute if score in_3 du_data <= in_1 du_data store result block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount double 0.01 run scoreboard players get in_0 du_data
 
-function du:player/inv/restore_hands
+function du:player/inv/restore_equipment

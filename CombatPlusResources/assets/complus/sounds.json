@@ -1,0 +1,20 @@
+{
+	"arc_star_throw": {
+		"subtitle":"Thrown Arc Star",
+		"sounds": [
+			"complus:arc_star_throw"
+		]
+	},
+	"arc_star_charge": {
+		"subtitle":"Arc Star Charging",
+		"sounds": [
+			"complus:arc_star_charge"
+		]
+	},
+	"arc_star_explode": {
+		"subtitle":"Arc Star Explosion",
+		"sounds": [
+			"complus:arc_star_explode"
+		]
+	}
+}

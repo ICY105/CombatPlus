@@ -10,15 +10,15 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"complus.name.scythe","color":"white","italic":false,"with":[{"translate":"complus.resource.iron"}]}
+			  "name": {"translate":"complus.name.hammer","color":"white","italic":false,"with":[{"translate":"complus.resource.iron"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{complus_id: 33, CustomModelData: 6420033, HideFlags: 34, complus:{base: 6.0, cooldown: 350, speed: 12}}"
+              "tag":"{complus_id: 43, CustomModelData: 6420043, HideFlags: 34, complus:{base: 9.0, cooldown: 1500, speed: 52, kb: 1b}}"
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"complus.lore.damage_decay","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[6]},{"translate":"complus.lore.attack_decay","color":"dark_green","italic":false,"with":[1.4]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"translate":"complus.lore.modified_cooldown","color":"gray","italic":false},{"translate":"complus.lore.modified_kb","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[9]},{"translate":"complus.lore.attack_speed","color":"dark_green","italic":false,"with":[0.7]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",
@@ -27,7 +27,7 @@
 						"name":"generic.attackDamage",
 						"attribute":"generic.attackDamage",
 						"operation":"addition",
-						"amount":6,
+						"amount":8,
 						"slot":"mainhand"
 					},
 					{

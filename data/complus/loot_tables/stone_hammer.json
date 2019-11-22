@@ -10,15 +10,15 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"complus.name.sickle","color":"white","italic":false,"with":[{"translate":"complus.resource.stone"}]}
+			  "name": {"translate":"complus.name.hammer","color":"white","italic":false,"with":[{"translate":"complus.resource.stone"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{complus_id: 27, CustomModelData: 6420027, HideFlags: 34, complus:{base: 5.0, cooldown: 1500, speed: 90}}"
+              "tag":"{complus_id: 42, CustomModelData: 6420042, HideFlags: 34, complus:{base: 9.0, cooldown: 1500, speed: 45, kb: 1b}}"
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"complus.lore.modified_cooldown","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[5]},{"translate":"complus.lore.attack_speed","color":"dark_green","italic":false,"with":[1.2]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"translate":"complus.lore.modified_cooldown","color":"gray","italic":false},{"translate":"complus.lore.modified_kb","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"complus.lore.attack_damage","color":"dark_green","italic":false,"with":[9]},{"translate":"complus.lore.attack_speed","color":"dark_green","italic":false,"with":[0.6]},{"translate":"complus.lore.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",
@@ -27,7 +27,7 @@
 						"name":"generic.attackDamage",
 						"attribute":"generic.attackDamage",
 						"operation":"addition",
-						"amount":4,
+						"amount":8,
 						"slot":"mainhand"
 					},
 					{

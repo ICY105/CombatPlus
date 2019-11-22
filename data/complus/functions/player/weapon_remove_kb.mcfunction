@@ -8,4 +8,4 @@ execute if score temp_2 du_data matches ..0 run data remove block -29999999 0 16
 execute if score temp_2 du_data matches 1.. store result block -29999999 0 1601 Items[0].tag.Enchantments[{id:"minecraft:knockback"}].lvl short 1 run scoreboard players get temp_2 du_data
 
 #set has no KB flag
-execute store result block -29999999 0 1601 Items[0].tag.complus_linear.kb byte 1 if entity @s
+execute store result block -29999999 0 1601 Items[0].tag.complus.kb byte 1 if entity @s

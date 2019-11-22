@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "translate": "complus.advancements.title_du",
+			"color":"red"
+        },
+        "description": {
+            "translate": "complus.advancements.description_du",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:diamond_sword",
+            "nbt": "{CustomModelData:6420014}"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "criteria": {
+        "always": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "du:base"
+}

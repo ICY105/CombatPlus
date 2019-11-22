@@ -6,6 +6,8 @@
     "overrides": [
 		{ "predicate": { "custom_model_data": 6420014 }, "model": "complus:item/diamond_katana" },
 		{ "predicate": { "custom_model_data": 6420029 }, "model": "complus:item/diamond_sickle" },
-		{ "predicate": { "custom_model_data": 6420034 }, "model": "complus:item/diamond_scythe" }
+		{ "predicate": { "custom_model_data": 6420034 }, "model": "complus:item/diamond_scythe" },
+		{ "predicate": { "custom_model_data": 6420039 }, "model": "complus:item/diamond_mace" },
+		{ "predicate": { "custom_model_data": 6420044 }, "model": "complus:item/diamond_hammer" }
 	]
 }

@@ -1,0 +1,1 @@
+loot give @s loot complus:diamond_arc_star

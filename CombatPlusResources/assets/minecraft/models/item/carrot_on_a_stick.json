@@ -24,6 +24,12 @@
 		{ "predicate": { "custom_model_data": 6420036 }, "model": "complus:item/golden_arc_star" },
 		{ "predicate": { "custom_model_data": 6420037 }, "model": "complus:item/stone_arc_star" },
 		{ "predicate": { "custom_model_data": 6420038 }, "model": "complus:item/iron_arc_star" },
-		{ "predicate": { "custom_model_data": 6420039 }, "model": "complus:item/diamond_arc_star" }
+		{ "predicate": { "custom_model_data": 6420039 }, "model": "complus:item/diamond_arc_star" },
+		
+		
+		
+		{ "predicate": { "custom_model_data": 6420100 }, "model": "complus:item/titanium_knife" },
+		{ "predicate": { "custom_model_data": 6420101 }, "model": "complus:item/titanium_spear" },
+		{ "predicate": { "custom_model_data": 6420102 }, "model": "complus:item/titanium_arc_star" }
 	]
 }

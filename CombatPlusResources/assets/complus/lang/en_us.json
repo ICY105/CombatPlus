@@ -15,6 +15,7 @@
 	"complus.resource.stone":"Stone",
 	"complus.resource.iron":"Iron",
 	"complus.resource.diamond":"Diamond",
+	"complus.resource.titanium":"Titanium",
 	
 	"complus.lore.added_by": "Added by: Combat+",
 	"complus.lore.attack_speed": " %f Attack Speed",

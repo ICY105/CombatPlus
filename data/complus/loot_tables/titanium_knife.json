@@ -10,11 +10,11 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"complus.name.knife","color":"white","italic":false,"with":[{"translate":"complus.resource.diamond"}]}
+			  "name": {"translate":"complus.name.knife","color":"light_purple","italic":false,"with":[{"translate":"complus.resource.titanium"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{complus_id: 19, CustomModelData: 6420019, du_dur:{enabled:1b,max_dur:380}, complus_knife:1b, HideFlags: 34}"
+              "tag":"{complus_id: 100, CustomModelData: 6420100, du_dur:{enabled:1b,max_dur:487}, mech_modify:1b, complus_knife:1b, HideFlags: 34}"
             },
 			{
 			  "function": "minecraft:set_lore",

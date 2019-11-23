@@ -5,6 +5,7 @@ execute if score temp_5 du_data matches 36 run scoreboard players set in_0 du_da
 execute if score temp_5 du_data matches 37 run scoreboard players set in_0 du_data 50
 execute if score temp_5 du_data matches 38 run scoreboard players set in_0 du_data 75
 execute if score temp_5 du_data matches 39 run scoreboard players set in_0 du_data 100
+execute if score temp_5 du_data matches 102 run scoreboard players set in_0 du_data 100
 scoreboard players set in_1 du_data 0
 
 #slow
@@ -16,31 +17,31 @@ execute if score temp_5 du_data matches 36 run effect give @e[type=#du:living,di
 #deal damage
 execute if score temp_5 du_data matches 36..37 as @e[type=#du:living,distance=..2,sort=nearest] run function complus:damage_entity
 execute if score temp_5 du_data matches 38 as @e[type=#du:living,distance=..3,sort=nearest] run function complus:damage_entity
-execute if score temp_5 du_data matches 39 as @e[type=#du:living,distance=..4,sort=nearest] run function complus:damage_entity
+execute if score temp_5 du_data matches 39..102 as @e[type=#du:living,distance=..4,sort=nearest] run function complus:damage_entity
 
 #break block
-execute if score temp_5 du_data matches 37..39 unless block ~ ~ ~ #du:unbreakable run setblock ~ ~ ~ air destroy
-execute if score temp_5 du_data matches 37..39 unless block ~1 ~ ~ #du:unbreakable run setblock ~1 ~ ~ air destroy
-execute if score temp_5 du_data matches 37..39 unless block ~ ~1 ~ #du:unbreakable run setblock ~ ~1 ~ air destroy
-execute if score temp_5 du_data matches 37..39 unless block ~ ~ ~1 #du:unbreakable run setblock ~ ~ ~1 air destroy
-execute if score temp_5 du_data matches 37..39 unless block ~-1 ~ ~ #du:unbreakable run setblock ~-1 ~ ~ air destroy
-execute if score temp_5 du_data matches 37..39 unless block ~ ~-1 ~ #du:unbreakable run setblock ~ ~-1 ~ air destroy
-execute if score temp_5 du_data matches 37..39 unless block ~ ~ ~-1 #du:unbreakable run setblock ~ ~ ~-1 air destroy
+execute if score temp_5 du_data matches 37..102 unless block ~ ~ ~ #du:unbreakable run setblock ~ ~ ~ air destroy
+execute if score temp_5 du_data matches 37..102 unless block ~1 ~ ~ #du:unbreakable run setblock ~1 ~ ~ air destroy
+execute if score temp_5 du_data matches 37..102 unless block ~ ~1 ~ #du:unbreakable run setblock ~ ~1 ~ air destroy
+execute if score temp_5 du_data matches 37..102 unless block ~ ~ ~1 #du:unbreakable run setblock ~ ~ ~1 air destroy
+execute if score temp_5 du_data matches 37..102 unless block ~-1 ~ ~ #du:unbreakable run setblock ~-1 ~ ~ air destroy
+execute if score temp_5 du_data matches 37..102 unless block ~ ~-1 ~ #du:unbreakable run setblock ~ ~-1 ~ air destroy
+execute if score temp_5 du_data matches 37..102 unless block ~ ~ ~-1 #du:unbreakable run setblock ~ ~ ~-1 air destroy
 
-execute if score temp_5 du_data matches 39 unless block ~1 ~ ~1 #du:unbreakable run setblock ~1 ~ ~1 air destroy
-execute if score temp_5 du_data matches 39 unless block ~1 ~ ~-1 #du:unbreakable run setblock ~1 ~ ~-1 air destroy
-execute if score temp_5 du_data matches 39 unless block ~-1 ~ ~1 #du:unbreakable run setblock ~-1 ~ ~1 air destroy
-execute if score temp_5 du_data matches 39 unless block ~-1 ~ ~-1 #du:unbreakable run setblock ~-1 ~ ~-1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~1 ~ ~1 #du:unbreakable run setblock ~1 ~ ~1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~1 ~ ~-1 #du:unbreakable run setblock ~1 ~ ~-1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~-1 ~ ~1 #du:unbreakable run setblock ~-1 ~ ~1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~-1 ~ ~-1 #du:unbreakable run setblock ~-1 ~ ~-1 air destroy
 
-execute if score temp_5 du_data matches 39 unless block ~1 ~1 ~ #du:unbreakable run setblock ~1 ~1 ~ air destroy
-execute if score temp_5 du_data matches 39 unless block ~1 ~-1 ~ #du:unbreakable run setblock ~1 ~-1 ~ air destroy
-execute if score temp_5 du_data matches 39 unless block ~-1 ~1 ~ #du:unbreakable run setblock ~-1 ~1 ~ air destroy
-execute if score temp_5 du_data matches 39 unless block ~-1 ~-1 ~ #du:unbreakable run setblock ~-1 ~-1 ~ air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~1 ~1 ~ #du:unbreakable run setblock ~1 ~1 ~ air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~1 ~-1 ~ #du:unbreakable run setblock ~1 ~-1 ~ air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~-1 ~1 ~ #du:unbreakable run setblock ~-1 ~1 ~ air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~-1 ~-1 ~ #du:unbreakable run setblock ~-1 ~-1 ~ air destroy
 
-execute if score temp_5 du_data matches 39 unless block ~ ~1 ~1 #du:unbreakable run setblock ~ ~1 ~1 air destroy
-execute if score temp_5 du_data matches 39 unless block ~ ~-1 ~1 #du:unbreakable run setblock ~ ~-1 ~1 air destroy
-execute if score temp_5 du_data matches 39 unless block ~ ~1 ~-1 #du:unbreakable run setblock ~ ~1 ~-1 air destroy
-execute if score temp_5 du_data matches 39 unless block ~ ~-1 ~-1 #du:unbreakable run setblock ~ ~-1 ~-1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~ ~1 ~1 #du:unbreakable run setblock ~ ~1 ~1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~ ~-1 ~1 #du:unbreakable run setblock ~ ~-1 ~1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~ ~1 ~-1 #du:unbreakable run setblock ~ ~1 ~-1 air destroy
+execute if score temp_5 du_data matches 39..102 unless block ~ ~-1 ~-1 #du:unbreakable run setblock ~ ~-1 ~-1 air destroy
 
 #effects
 particle minecraft:dust 0.0 0.5 1.0 1.0 ~ ~1 ~ 1 1 1 1 150 normal

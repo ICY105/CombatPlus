@@ -7,4 +7,6 @@ effect give @s[type=!player] minecraft:resistance 1 4 true
 effect give @s[type=#du:undead] minecraft:instant_health 1 0 true
 effect give @s[type=!player,type=!#du:undead] minecraft:instant_damage 1 0 true
 
+scoreboard players operation $player.in_0 du_data = in_0 du_data
+scoreboard players set $player.in_1 du_data 0
 execute if entity @s[type=player] run function du:player/add_damage

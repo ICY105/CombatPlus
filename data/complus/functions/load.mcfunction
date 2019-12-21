@@ -4,6 +4,3 @@ scoreboard objectives add complus_coas minecraft.used:minecraft.carrot_on_a_stic
 scoreboard objectives add complus_cooldown dummy
 
 scoreboard players set $complus.ver load 1000000
-
-#install message
-schedule function complus:install 2s

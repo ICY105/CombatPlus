@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"complus.name.mace","color":"white","italic":false,"with":[{"translate":"complus.resource.diamond"}]}
+			  "name": {"translate":"complus.name.mace","color":"white","italic":false,"with":[{"translate":"complus.resource.stone"}]}
 			},
 			{
               "function": "minecraft:set_nbt",

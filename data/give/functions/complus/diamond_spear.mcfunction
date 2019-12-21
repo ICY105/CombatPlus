@@ -1,1 +1,1 @@
-loot give @s loot complus:wooden_spear
+loot give @s loot complus:diamond_spear

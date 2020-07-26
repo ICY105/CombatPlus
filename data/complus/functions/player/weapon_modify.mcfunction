@@ -16,7 +16,7 @@ scoreboard players set temp_0 du_data 500
 scoreboard players operation in_3 du_data *= temp_0 du_data
 scoreboard players operation in_0 du_data -= in_3 du_data
 
-execute store result block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attackDamage"}].Amount double 0.0002 run scoreboard players get in_0 du_data
+execute store result block -29999999 0 1601 Items[0].tag.AttributeModifiers[{Name:"generic.attack_damage"}].Amount double 0.0002 run scoreboard players get in_0 du_data
 
 function du:player/inv/restore_equipment
 

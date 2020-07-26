@@ -13,3 +13,5 @@ Currently Adds:
 6. Knives: Like weaker swords, but can be thrown with right click
 7. Arc Stars: A stick grenade that explodes after a short delay, breaking blocks and slowing nearby entities
 8. Spears: No cooldown
+
+Credit to Jachro for way better item textures than I can make. Here's his [fiverr](https://www.fiverr.com/jachro/draw-a-pixel-art-logo-profile-picture-or-icon) if you're interested.

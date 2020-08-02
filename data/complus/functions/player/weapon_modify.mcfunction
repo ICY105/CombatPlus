@@ -5,6 +5,9 @@ function du:player/inv/get_equipment
 execute if score in_2 du_data matches 1 if score @s complus_cooldown matches 1500.. run function complus:player/weapon_add_kb
 execute if score in_2 du_data matches 2 if score @s complus_cooldown matches ..1499 run function complus:player/weapon_remove_kb
 
+execute if score in_2 du_data matches 3 if score @s complus_cooldown matches 1500.. run function complus:player/weapon_add_kb_2
+execute if score in_2 du_data matches 4 if score @s complus_cooldown matches ..1499 run function complus:player/weapon_remove_kb_2
+
 scoreboard players operation in_0 du_data += in_3 du_data
 scoreboard players operation in_0 du_data *= @s complus_cooldown
 

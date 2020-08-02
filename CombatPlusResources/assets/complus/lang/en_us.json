@@ -1,37 +1,42 @@
 {
-    "complus.name.crafter": "Armory Table",
-	
-	"complus.name.katana":"%s Katana",
-	"complus.name.knife":"%s Knife",
-	"complus.name.spear":"%s Spear",
-	"complus.name.scythe":"%s Scythe",
-	"complus.name.sickle":"%s Sickle",
-	"complus.name.mace":"%s Mace",
-	"complus.name.hammer":"%s Hammer",
-	"complus.name.arc_star":"%s Arc Star",
-	
-	"complus.resource.wooden":"Wooden",
-	"complus.resource.golden":"Golden",
-	"complus.resource.stone":"Stone",
-	"complus.resource.iron":"Iron",
-	"complus.resource.diamond":"Diamond",
-	"complus.resource.titanium":"Titanium",
-	
-	"complus.lore.added_by": "Added by: Combat+",
-	"complus.lore.attack_speed": " %f Attack Speed",
-	"complus.lore.attack_damage": " %f Attack Damage",
-	"complus.lore.attack_decay": " %f Attack Decay",
-	"complus.lore.attack_combo": " %f Attack Combo",
-	
-	"complus.lore.damage_decay": "Damage Decay",
-	"complus.lore.damage_combo": "Combo Damage",
-	"complus.lore.no_cooldown": "No Cooldown (1.8)",
-	"complus.lore.modified_cooldown": "Linear 1.9 Cooldown",
-	"complus.lore.modified_kb": "+Knockback",
-	
-	"Looks like you don't have the resourcepack for Combat+. You can download that [here].": "",
-	"combatplus.nex.info": "You are running Combat+ by ICY105. Learn more about it on my ",
-	
-	"complus.advancements.title_du":"Combat+",
-	"complus.advancements.description_du":"Running Combat+ by ICY105"
+  "complus.name.crafter": "Armory Table",
+
+  "complus.name.katana": "%s Katana",
+  "complus.name.knife": "%s Knife",
+  "complus.name.spear": "%s Spear",
+  "complus.name.scythe": "%s Scythe",
+  "complus.name.sickle": "%s Sickle",
+  "complus.name.mace": "%s Mace",
+  "complus.name.mace.head": "%s Mace Head",
+  "complus.name.hammer": "%s Hammer",
+  "complus.name.arc_star": "%s Arc Star",
+
+  "complus.resource.wooden": "Wooden",
+  "complus.resource.golden": "Golden",
+  "complus.resource.stone": "Stone",
+  "complus.resource.iron": "Iron",
+  "complus.resource.diamond": "Diamond",
+  "complus.resource.titanium": "Titanium",
+  "complus.resource.netherite": "Netherite",
+
+  "complus.lore.usedIn_mace_recipe": "Used in the mace recipe",
+  "complus.lore.added_by": "Added by: Combat+",
+  "complus.lore.attack_speed": " %f Attack Speed",
+  "complus.lore.attack_damage": " %f Attack Damage",
+  "complus.lore.attack_decay": " %f Attack Decay",
+  "complus.lore.attack_combo": " %f Attack Combo",
+
+  "complus.lore.damage_decay": "Damage Decay",
+  "complus.lore.damage_combo": "Combo Damage",
+  "complus.lore.no_cooldown": "No Cooldown (1.8)",
+  "complus.lore.modified_cooldown": "Linear 1.9 Cooldown",
+  "complus.lore.modified_kb": "+Knockback I",
+  "complus.lore.modified_kb_2": "+Knockback II",
+  "complus.lore.throwable": "Throwable",
+
+  "Looks like you don't have the resourcepack for Combat+. You can download that [here].": "",
+  "combatplus.nex.info": "You are running Combat+ by ICY105. Learn more about it on my ",
+
+  "complus.advancements.title_du": "Combat+",
+  "complus.advancements.description_du": "Running Combat+ by ICY105"
 }

@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+              "name": {
+                "translate": "complus.name.katana",
+                "color": "red",
+                "italic": false,
+                "with": [ { "translate": "complus.resource.netherite" } ]
+              }
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{complus_id: 109, CustomModelData: 6420109, HideFlags: 34, complus:{base: 7.0, cooldown: -250, speed: -36}}"
+            },
+			{
+			  "function": "minecraft:set_lore",
+        "lore": [
+          {
+            "translate": "complus.lore.damage_combo",
+            "color": "gray",
+            "italic": false
+          },
+          { "text": "" },
+          {
+            "translate": "item.modifiers.mainhand",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "complus.lore.attack_damage",
+            "color": "dark_green",
+            "italic": false,
+            "with": [ 9 ]
+          },
+          {
+            "translate": "complus.lore.attack_combo",
+            "color": "dark_green",
+            "italic": false,
+            "with": [ 1.2 ]
+          },
+          {
+            "translate": "complus.lore.added_by",
+            "color": "blue",
+            "italic": false
+          }
+        ]
+			},
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.attack_damage",
+						"attribute":"generic.attack_damage",
+						"operation":"addition",
+						"amount":9,
+						"slot":"mainhand"
+					},
+					{
+						"name":"generic.attack_speed",
+						"attribute":"generic.attack_speed",
+						"operation":"addition",
+						"amount":1024,
+						"slot":"mainhand"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

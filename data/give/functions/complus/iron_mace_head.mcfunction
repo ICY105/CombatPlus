@@ -1,0 +1,1 @@
+loot give @s loot complus:iron_mace_head

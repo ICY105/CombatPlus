@@ -1,17 +1,22 @@
 {
-	"display": {
-		"title": "attack_entity","description": "","icon": {"item": "minecraft:stone"},
-		"hidden":true,
-		"show_toast": false,
-		"announce_to_chat": false
+  "parent": "du:base",
+  "display": {
+    "icon": {
+      "item": "minecraft:stone"
     },
-	"criteria": {
-        "use_decay_item": {
-			"trigger": "minecraft:player_hurt_entity"
-		}
-    },
-	"rewards":{ 
-		"function":"complus:player/attack_entity"
-	},
-	"parent":"du:base"
+    "title": "attack_entity",
+    "description": "",
+    "hidden": true,
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "criteria": {
+    "use_decay_item": {
+      "trigger": "minecraft:player_hurt_entity"
+    }
+  },
+  "rewards": {
+    "function": "complus:player/attack_entity"
+  }
+
 }

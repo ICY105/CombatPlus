@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_star",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "complus.name.mace.head",
+                "color": "white",
+                "italic": false,
+                "with": [ { "translate": "complus.resource.stone" } ]
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{complus_id: 115, CustomModelData: 6420115, HideFlags: 34, complus_mace_head:1b}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "complus.lore.usedIn_mace_recipe",
+                  "color": "gray",
+                  "italic": false
+                },
+                {"text": ""},
+                {
+                  "translate": "complus.lore.added_by",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

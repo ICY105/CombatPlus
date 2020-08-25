@@ -1,0 +1,53 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/trident_inventory"
+  },
+  "display": {
+    "gui": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "fixed": {
+      "rotation": [ 0, 180, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "ground": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 2, 0 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 6520020 },
+      "model": "item/wooden_trident_inventory"
+    },
+    {
+      "predicate": { "custom_model_data": 6520021 },
+      "model": "item/gold_trident_inventory"
+    },
+    {
+      "predicate": { "custom_model_data": 6520022 },
+      "model": "item/stone_trident_inventory"
+    },
+    {
+      "predicate": { "custom_model_data": 6520023 },
+      "model": "item/iron_trident_inventory"
+    },
+    {
+      "predicate": { "custom_model_data": 6520024 },
+      "model": "item/diamond_trident_inventory"
+    },
+    {
+      "predicate": { "custom_model_data": 6520025 },
+      "model": "item/netherite_trident_inventory"
+    },
+    {
+      "predicate": { "custom_model_data": 6520101 },
+      "model": "item/titanium_trident_inventory"
+    }
+  ]
+}

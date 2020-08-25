@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "complus.name.knife",
+                "color": "red",
+                "italic": false,
+                "with": [ { "translate": "complus.resource.netherite" } ]
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{complus_id: 20, CustomModelData: 6420020, du_dur:{enabled:1b,max_dur:430}, complus_knife:1b, HideFlags: 34}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "complus.lore.throwable",
+                  "color": "gray",
+                  "italic": false
+                },
+                { "text": "" },
+                {
+                  "translate": "item.modifiers.mainhand",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "complus.lore.attack_damage",
+                  "color": "dark_green",
+                  "italic": false,
+                  "with": [ 6.5 ]
+                },
+                {
+                  "translate": "complus.lore.attack_speed",
+                  "color": "dark_green",
+                  "italic": false,
+                  "with": [ 2 ]
+                },
+                {
+                  "translate": "complus.lore.added_by",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "generic.attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "addition",
+                  "amount": 5.5,
+                  "slot": "mainhand"
+                },
+                {
+                  "name": "generic.attack_speed",
+                  "attribute": "generic.attack_speed",
+                  "operation": "addition",
+                  "amount": -2.0,
+                  "slot": "mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

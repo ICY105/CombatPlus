@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "complus:item/stone_mace_head",
+    "layer1": "complus:item/invisible"
+  },
+  "display": {
+    "gui": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0.5, -0.5, 0 ],
+      "scale": [ 1.25, 1.25, 1.25 ]
+    }
+  }
+}

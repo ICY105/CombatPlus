@@ -1,0 +1,43 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "complus:item/netherite_spear"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [ 0, 90, 60 ],
+      "translation": [ 0, 0, 1 ],
+      "scale": [ 2, 0.75, 0.75 ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [ 180, 270, 120 ],
+      "translation": [ 0, 1, 1 ],
+      "scale": [ 2, 0.75, 0.75 ]
+    },
+    "firstperson_righthand": {
+      "rotation": [ 90, 50, -100 ],
+      "translation": [ 0, 0, -1 ],
+      "scale": [ 2, 0.75, 0.75 ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [ 90, 220, 100 ],
+      "translation": [ 0, 0, 1 ],
+      "scale": [ 2, 0.75, 0.75 ]
+    },
+    "gui": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "fixed": {
+      "rotation": [ 0, 180, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 1, 1, 1 ]
+    },
+    "ground": {
+      "rotation": [ 0, 0, -15 ],
+      "translation": [ 0, 3, 0 ],
+      "scale": [ 2, 0.75, 0.75 ]
+    }
+  }
+}

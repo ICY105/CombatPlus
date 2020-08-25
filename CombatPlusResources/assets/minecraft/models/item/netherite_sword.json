@@ -1,0 +1,28 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "item/netherite_sword"
+  },
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 6420109 },
+      "model": "complus:item/netherite_katana"
+    },
+    {
+      "predicate": { "custom_model_data": 6420110 },
+      "model": "complus:item/netherite_sickle"
+    },
+    {
+      "predicate": { "custom_model_data": 6420111 },
+      "model": "complus:item/netherite_scythe"
+    },
+    {
+      "predicate": { "custom_model_data": 6420112 },
+      "model": "complus:item/netherite_mace"
+    },
+    {
+      "predicate": { "custom_model_data": 6420113 },
+      "model": "complus:item/netherite_hammer"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "complus:item/netherite_knife"
+  },
+  "display": {
+    "ground": {
+      "rotation": [ 90, 0, 0 ],
+      "translation": [ 0, -3, 0 ],
+      "scale": [ 0.75, 0.75, 0.75 ]
+    }
+  }
+}

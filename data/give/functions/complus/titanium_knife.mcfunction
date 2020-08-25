@@ -1,1 +1,1 @@
-loot give @s loot complus:wooden_knife
+loot give @s loot complus:titanium_knife

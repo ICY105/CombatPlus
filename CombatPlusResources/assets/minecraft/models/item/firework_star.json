@@ -1,0 +1,37 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/firework_star",
+    "layer1": "item/firework_star_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": { "custom_model_data": 6420114 },
+      "model": "complus:item/wooden_mace_head"
+    },
+    {
+      "predicate": { "custom_model_data": 6420115 },
+      "model": "complus:item/stone_mace_head"
+    },
+    {
+      "predicate": { "custom_model_data": 6420116 },
+      "model": "complus:item/golden_mace_head"
+    },
+    {
+      "predicate": { "custom_model_data": 6420117 },
+      "model": "complus:item/iron_mace_head"
+    },
+    {
+      "predicate": { "custom_model_data": 6420118 },
+      "model": "complus:item/diamond_mace_head"
+    },
+    {
+      "predicate": { "custom_model_data": 6420119 },
+      "model": "complus:item/netherite_mace_head"
+    },
+    {
+      "predicate": { "custom_model_data": 6420120 },
+      "model": "complus:item/titanium_mace_head"
+    }
+  ]
+}

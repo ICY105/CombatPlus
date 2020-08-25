@@ -1,0 +1,1 @@
+loot give @s loot complus:stone_mace_head

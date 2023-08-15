@@ -1,5 +1,5 @@
 {
-    "complus.name.crafter": "Armory Table",
+    "text.complus.resourcepack": "",
 	
 	"complus.name.katana":"%s Katana",
 	"complus.name.knife":"%s Knife",
@@ -15,7 +15,6 @@
 	"complus.resource.stone":"Stone",
 	"complus.resource.iron":"Iron",
 	"complus.resource.diamond":"Diamond",
-	"complus.resource.titanium":"Titanium",
 	
 	"complus.lore.added_by": "Added by: Combat+",
 	"complus.lore.attack_speed": " %f Attack Speed",
@@ -27,11 +26,5 @@
 	"complus.lore.damage_combo": "Combo Damage",
 	"complus.lore.no_cooldown": "No Cooldown (1.8)",
 	"complus.lore.modified_cooldown": "Linear 1.9 Cooldown",
-	"complus.lore.modified_kb": "+Knockback",
-	
-	"Looks like you don't have the resourcepack for Combat+. You can download that [here].": "",
-	"combatplus.nex.info": "You are running Combat+ by ICY105. Learn more about it on my ",
-	
-	"complus.advancements.title_du":"Combat+",
-	"complus.advancements.description_du":"Running Combat+ by ICY105"
+	"complus.lore.modified_kb": "+Knockback"
 }

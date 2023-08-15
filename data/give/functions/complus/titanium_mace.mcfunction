@@ -1,1 +1,0 @@
-loot give @s loot complus:titanium_mace

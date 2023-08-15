@@ -1,18 +1,13 @@
 
-scoreboard players set $install complus_cooldown 1
+scoreboard players set #install complus.cooldown 0
 
-#check for 1.15
-function complus:utils/check_version
-execute if score $install.ver complus_cooldown matches ..15 run scoreboard players set $install complus_cooldown 0
-execute if score $install.ver complus_cooldown matches ..15 run tellraw @a [{"text":"Error: This version of Combat+ requires Minecraft +1.16. Click [here] to download the older versions.\n","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/CombatPlus/releases"}}]
+# check for 1.20
+execute store result score #minecraft.version complus.cooldown run data get entity @p DataVersion
+execute unless score #minecraft.version complus.cooldown matches 3463.. run scoreboard players set #install complus.cooldown -1
+execute if score #install complus.cooldown matches -1 run tellraw @a [{"text":"Error: Combat+ v"},{"score":{"name":"#complus.ver.major","objective":"load.status"}},{"text":","},{"score":{"name":"#complus.ver.minor","objective":"load.status"}},{"text":","},{"score":{"name":"#complus.ver.fix","objective":"load.status"}},{"text":" requires Minecraft +1.20 - Click [here] to download alternate versions.","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/CombatPlus/releases"}}]
 
-#check DU
-execute unless score $du.ver load matches 2020000.. run scoreboard players set $install complus_cooldown 0
-execute unless score $du.ver load matches 2020000.. run tellraw @a [{"text":"Error: Combat+ requires Datapack Utilities version +2.2.0. You can download that [here].\n","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
+# mark as installed
+execute if score #install complus.cooldown matches 0 run scoreboard players set #install complus.cooldown 1
 
-#print install message
-execute if score $install complus_cooldown matches 1 run tellraw @a [{"text":"[Loaded Combat+ v1.2.0]","color":"dark_green"}]
-execute if score $install complus_cooldown matches 0 run tellraw @a [{"text":"[Failed to load Combat+]","color":"dark_red"}]
-
-#resourcepack
-tellraw @a [{"translate":"Looks like you don't have the resourcepack for Combat+. You can download that [here].","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/CombatPlus/releases"}}]
+# resourcepack
+tellraw @a [{"translate":"text.complus.resourcepack","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/CombatPlus/releases"},"fallback":"Looks like you don't have the Combat+ Resourcepack. You can download that [here]."}]

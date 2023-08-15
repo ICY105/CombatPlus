@@ -1,1 +1,0 @@
-loot give @s loot complus:iron_katana

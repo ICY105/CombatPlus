@@ -1,1 +1,0 @@
-loot give @s loot complus:wooden_scythe

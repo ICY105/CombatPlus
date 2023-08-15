@@ -4,10 +4,10 @@
         "layer0": "item/wooden_sword"
     },
     "overrides": [
-		{ "predicate": { "custom_model_data": 6420010 }, "model": "complus:item/wooden_katana" },
-		{ "predicate": { "custom_model_data": 6420025 }, "model": "complus:item/wooden_sickle" },
-		{ "predicate": { "custom_model_data": 6420030 }, "model": "complus:item/wooden_scythe" },
-		{ "predicate": { "custom_model_data": 6420035 }, "model": "complus:item/wooden_mace" },
-		{ "predicate": { "custom_model_data": 6420040 }, "model": "complus:item/wooden_hammer" }
+		{ "predicate": { "custom_model_data": 6420010 }, "model": "combatplus:item/wooden_katana" },
+		{ "predicate": { "custom_model_data": 6420025 }, "model": "combatplus:item/wooden_sickle" },
+		{ "predicate": { "custom_model_data": 6420030 }, "model": "combatplus:item/wooden_scythe" },
+		{ "predicate": { "custom_model_data": 6420035 }, "model": "combatplus:item/wooden_mace" },
+		{ "predicate": { "custom_model_data": 6420040 }, "model": "combatplus:item/wooden_hammer" }
 	]
 }

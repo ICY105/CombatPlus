@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/titanium_arc_star"
+        "layer0": "combatplus:item/titanium_arc_star"
     },
 	"display": {
         "ground": {

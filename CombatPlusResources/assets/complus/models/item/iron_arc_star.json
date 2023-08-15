@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/iron_arc_star"
+        "layer0": "combatplus:item/iron_arc_star"
     },
 	"display": {
         "ground": {

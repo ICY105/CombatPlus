@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/iron_knife"
+        "layer0": "combatplus:item/iron_knife"
     },
 	"display": {
         "ground": {

@@ -1,12 +1,12 @@
 {
-    "parent": "complus:block",
+    "parent": "combatplus:block",
     "textures": {
-        "particle": "complus:item/armory_table_front",
-        "down": "complus:item/armory_table_bottom",
-        "up": "complus:item/armory_table_top",
-        "north": "complus:item/armory_table_front",
-        "east": "complus:item/armory_table_side",
-        "south": "complus:item/armory_table_front",
-        "west": "complus:item/armory_table_side"
+        "particle": "combatplus:item/armory_table_front",
+        "down": "combatplus:item/armory_table_bottom",
+        "up": "combatplus:item/armory_table_top",
+        "north": "combatplus:item/armory_table_front",
+        "east": "combatplus:item/armory_table_side",
+        "south": "combatplus:item/armory_table_front",
+        "west": "combatplus:item/armory_table_side"
     }
 }

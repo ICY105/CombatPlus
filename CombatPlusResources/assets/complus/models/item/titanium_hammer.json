@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/titanium_hammer"
+        "layer0": "combatplus:item/titanium_hammer"
     }
 }

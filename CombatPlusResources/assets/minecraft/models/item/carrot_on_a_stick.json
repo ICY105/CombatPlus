@@ -4,32 +4,32 @@
         "layer0": "item/carrot_on_a_stick"
     },
     "overrides": [
-		{ "predicate": { "custom_model_data": 6420001 }, "model": "complus:crafter" },
-		{ "predicate": { "custom_model_data": 6420002 }, "model": "complus:invisible" },
-		{ "predicate": { "custom_model_data": 6420003 }, "model": "complus:crafter_gui" },
+		{ "predicate": { "custom_model_data": 6420001 }, "model": "combatplus:crafter" },
+		{ "predicate": { "custom_model_data": 6420002 }, "model": "combatplus:invisible" },
+		{ "predicate": { "custom_model_data": 6420003 }, "model": "combatplus:crafter_gui" },
 		
-		{ "predicate": { "custom_model_data": 6420015 }, "model": "complus:item/wooden_knife" },
-		{ "predicate": { "custom_model_data": 6420016 }, "model": "complus:item/golden_knife" },
-		{ "predicate": { "custom_model_data": 6420017 }, "model": "complus:item/stone_knife" },
-		{ "predicate": { "custom_model_data": 6420018 }, "model": "complus:item/iron_knife" },
-		{ "predicate": { "custom_model_data": 6420019 }, "model": "complus:item/diamond_knife" },
+		{ "predicate": { "custom_model_data": 6420015 }, "model": "combatplus:item/wooden_knife" },
+		{ "predicate": { "custom_model_data": 6420016 }, "model": "combatplus:item/golden_knife" },
+		{ "predicate": { "custom_model_data": 6420017 }, "model": "combatplus:item/stone_knife" },
+		{ "predicate": { "custom_model_data": 6420018 }, "model": "combatplus:item/iron_knife" },
+		{ "predicate": { "custom_model_data": 6420019 }, "model": "combatplus:item/diamond_knife" },
 		
-		{ "predicate": { "custom_model_data": 6420020 }, "model": "complus:item/wooden_spear" },
-		{ "predicate": { "custom_model_data": 6420021 }, "model": "complus:item/golden_spear" },
-		{ "predicate": { "custom_model_data": 6420022 }, "model": "complus:item/stone_spear" },
-		{ "predicate": { "custom_model_data": 6420023 }, "model": "complus:item/iron_spear" },
-		{ "predicate": { "custom_model_data": 6420024 }, "model": "complus:item/diamond_spear" },
+		{ "predicate": { "custom_model_data": 6420020 }, "model": "combatplus:item/wooden_spear" },
+		{ "predicate": { "custom_model_data": 6420021 }, "model": "combatplus:item/golden_spear" },
+		{ "predicate": { "custom_model_data": 6420022 }, "model": "combatplus:item/stone_spear" },
+		{ "predicate": { "custom_model_data": 6420023 }, "model": "combatplus:item/iron_spear" },
+		{ "predicate": { "custom_model_data": 6420024 }, "model": "combatplus:item/diamond_spear" },
 		
-		{ "predicate": { "custom_model_data": 6420035 }, "model": "complus:item/wooden_arc_star" },
-		{ "predicate": { "custom_model_data": 6420036 }, "model": "complus:item/golden_arc_star" },
-		{ "predicate": { "custom_model_data": 6420037 }, "model": "complus:item/stone_arc_star" },
-		{ "predicate": { "custom_model_data": 6420038 }, "model": "complus:item/iron_arc_star" },
-		{ "predicate": { "custom_model_data": 6420039 }, "model": "complus:item/diamond_arc_star" },
+		{ "predicate": { "custom_model_data": 6420035 }, "model": "combatplus:item/wooden_arc_star" },
+		{ "predicate": { "custom_model_data": 6420036 }, "model": "combatplus:item/golden_arc_star" },
+		{ "predicate": { "custom_model_data": 6420037 }, "model": "combatplus:item/stone_arc_star" },
+		{ "predicate": { "custom_model_data": 6420038 }, "model": "combatplus:item/iron_arc_star" },
+		{ "predicate": { "custom_model_data": 6420039 }, "model": "combatplus:item/diamond_arc_star" },
 		
 		
 		
-		{ "predicate": { "custom_model_data": 6420100 }, "model": "complus:item/titanium_knife" },
-		{ "predicate": { "custom_model_data": 6420101 }, "model": "complus:item/titanium_spear" },
-		{ "predicate": { "custom_model_data": 6420102 }, "model": "complus:item/titanium_arc_star" }
+		{ "predicate": { "custom_model_data": 6420100 }, "model": "combatplus:item/titanium_knife" },
+		{ "predicate": { "custom_model_data": 6420101 }, "model": "combatplus:item/titanium_spear" },
+		{ "predicate": { "custom_model_data": 6420102 }, "model": "combatplus:item/titanium_arc_star" }
 	]
 }

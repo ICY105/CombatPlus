@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/stone_hammer"
+        "layer0": "combatplus:item/stone_hammer"
     }
 }

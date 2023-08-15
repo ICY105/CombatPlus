@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/titanium_knife"
+        "layer0": "combatplus:item/titanium_knife"
     },
 	"display": {
         "ground": {

@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "complus:item/invisible"
+        "layer0": "combatplus:item/invisible"
     }
 }

@@ -1,0 +1,10 @@
+{
+	"criteria": {
+        "use_decay_item": {
+			"trigger": "minecraft:player_hurt_entity"
+		}
+    },
+	"rewards":{ 
+		"function":"combatplus:player/attack_entity"
+	}
+}

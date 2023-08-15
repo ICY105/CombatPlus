@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/golden_arc_star"
+        "layer0": "combatplus:item/golden_arc_star"
     },
 	"display": {
         "ground": {

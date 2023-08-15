@@ -2,7 +2,7 @@
     "providers": [
 		{
             "type": "bitmap",
-            "file": "complus:gui/weapon_decay.png",
+            "file": "combatplus:gui/weapon_decay.png",
 			"ascent": -5,
 			"height": 5,
 			"chars": ["\uef10\uef11\uef12\uef13","\uef14\uef15\uef16\uef17","\uef18\uef19\uef1a\uef1b","\uef1c\uef1d\uef1e\uef1f"]

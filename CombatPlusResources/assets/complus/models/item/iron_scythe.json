@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/iron_scythe"
+        "layer0": "combatplus:item/iron_scythe"
     }
 }

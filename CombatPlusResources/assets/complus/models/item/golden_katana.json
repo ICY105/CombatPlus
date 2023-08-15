@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/golden_katana"
+        "layer0": "combatplus:item/golden_katana"
     },
     "display": {
         "thirdperson_righthand": {

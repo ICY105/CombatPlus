@@ -1,6 +1,6 @@
 {
 	"textures": {
-		"texture": "complus:gui/crafter_gui"
+		"texture": "combatplus:gui/crafter_gui"
 	},
 	"elements": [ 
 		{

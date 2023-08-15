@@ -4,18 +4,18 @@
         "layer0": "item/diamond_sword"
     },
     "overrides": [
-		{ "predicate": { "custom_model_data": 6420014 }, "model": "complus:item/diamond_katana" },
-		{ "predicate": { "custom_model_data": 6420029 }, "model": "complus:item/diamond_sickle" },
-		{ "predicate": { "custom_model_data": 6420034 }, "model": "complus:item/diamond_scythe" },
-		{ "predicate": { "custom_model_data": 6420039 }, "model": "complus:item/diamond_mace" },
-		{ "predicate": { "custom_model_data": 6420044 }, "model": "complus:item/diamond_hammer" },
+		{ "predicate": { "custom_model_data": 6420014 }, "model": "combatplus:item/diamond_katana" },
+		{ "predicate": { "custom_model_data": 6420029 }, "model": "combatplus:item/diamond_sickle" },
+		{ "predicate": { "custom_model_data": 6420034 }, "model": "combatplus:item/diamond_scythe" },
+		{ "predicate": { "custom_model_data": 6420039 }, "model": "combatplus:item/diamond_mace" },
+		{ "predicate": { "custom_model_data": 6420044 }, "model": "combatplus:item/diamond_hammer" },
 		
 		
 		
-		{ "predicate": { "custom_model_data": 6420103 }, "model": "complus:item/titanium_katana" },
-		{ "predicate": { "custom_model_data": 6420104 }, "model": "complus:item/titanium_sickle" },
-		{ "predicate": { "custom_model_data": 6420105 }, "model": "complus:item/titanium_scythe" },
-		{ "predicate": { "custom_model_data": 6420106 }, "model": "complus:item/titanium_mace" },
-		{ "predicate": { "custom_model_data": 6420107 }, "model": "complus:item/titanium_hammer" }
+		{ "predicate": { "custom_model_data": 6420103 }, "model": "combatplus:item/titanium_katana" },
+		{ "predicate": { "custom_model_data": 6420104 }, "model": "combatplus:item/titanium_sickle" },
+		{ "predicate": { "custom_model_data": 6420105 }, "model": "combatplus:item/titanium_scythe" },
+		{ "predicate": { "custom_model_data": 6420106 }, "model": "combatplus:item/titanium_mace" },
+		{ "predicate": { "custom_model_data": 6420107 }, "model": "combatplus:item/titanium_hammer" }
 	]
 }

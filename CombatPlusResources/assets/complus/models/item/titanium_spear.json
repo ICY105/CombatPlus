@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/titanium_spear"
+        "layer0": "combatplus:item/titanium_spear"
     },
     "display": {
         "thirdperson_righthand": {

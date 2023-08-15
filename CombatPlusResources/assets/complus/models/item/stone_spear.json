@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "complus:item/stone_spear"
+        "layer0": "combatplus:item/stone_spear"
     },
     "display": {
         "thirdperson_righthand": {

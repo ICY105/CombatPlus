@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"combatplus.name.knife","color":"white","italic":false,"with":[{"translate":"combatplus.resource.wooden"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{combatplus_id: 15, CustomModelData: 6420015, du_dur:{enabled:1b,max_dur:15}, combatplus_knife:1b, HideFlags: 34}"
+            },
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"combatplus.lore.attack_speed","color":"dark_green","italic":false,"with":[2]},{"translate":"combatplus.lore.attack_damage","color":"dark_green","italic":false,"with":[2.5]},{"translate":"combatplus.lore.added_by","color":"blue","italic":false}]
+			},
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.attack_damage",
+						"attribute":"generic.attack_damage",
+						"operation":"addition",
+						"amount":1.5,
+						"slot":"mainhand",
+						"id": "64200000-0001-0000-0000-64200000000"
+					},
+					{
+						"name":"generic.attack_speed",
+						"attribute":"generic.attack_speed",
+						"operation":"addition",
+						"amount":-2.0,
+						"slot":"mainhand",
+						"id": "64200000-0002-0000-0000-64200000000"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

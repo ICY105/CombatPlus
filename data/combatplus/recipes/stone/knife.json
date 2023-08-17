@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " d ",
+        " t ",
+        " S "
+    ],
+    "key": {
+        "t": {
+            "item": "minecraft:string"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        },
+		"d": {
+			"item": "minecraft:cobblestone"
+		}
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

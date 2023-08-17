@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "combatplus:iron/scythe"
+			}
+		}
+	},
+	"rewards": {
+		"function": "combatplus:recipe/iron/scythe"
+	}
+}

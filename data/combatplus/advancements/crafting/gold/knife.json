@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "combatplus:gold/knife"
+			}
+		}
+	},
+	"rewards": {
+		"function": "combatplus:recipe/gold/knife"
+	}
+}

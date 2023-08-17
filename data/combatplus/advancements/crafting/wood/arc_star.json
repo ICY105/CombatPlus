@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "combatplus:wood/arc_star"
+			}
+		}
+	},
+	"rewards": {
+		"function": "combatplus:recipe/wood/arc_star"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "combatplus:diamond/spear"
+			}
+		}
+	},
+	"rewards": {
+		"function": "combatplus:recipe/diamond/spear"
+	}
+}

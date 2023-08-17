@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "combatplus:wood/katana"
+			}
+		}
+	},
+	"rewards": {
+		"function": "combatplus:recipe/wood/katana"
+	}
+}

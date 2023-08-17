@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"placeholder": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "combatplus:diamond/arc_star"
+			}
+		}
+	},
+	"rewards": {
+		"function": "combatplus:recipe/diamond/arc_star"
+	}
+}

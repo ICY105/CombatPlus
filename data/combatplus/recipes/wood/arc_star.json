@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " g ",
+        "gdg",
+        " g "
+    ],
+    "key": {
+        "g": {
+            "item": "minecraft:gunpowder"
+        },
+        "d": {
+            "tag": "minecraft:planks"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

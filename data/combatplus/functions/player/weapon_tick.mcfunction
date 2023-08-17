@@ -64,7 +64,7 @@ execute if score @s combatplus.cooldown matches 900..1049 run attribute @s minec
 execute if score @s combatplus.cooldown matches 1050..1199 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.2 multiply_base
 execute if score @s combatplus.cooldown matches 1200..1349 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.1 multiply_base
 
-execute if score #remainder combatplus.data matches 0..14 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.09 multiply_base
+execute if score @s combatplus.cooldown matches 0..1499 if score #remainder combatplus.data matches 0..14 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.09 multiply_base
 execute if score #remainder combatplus.data matches 15..29 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.08 multiply_base
 execute if score #remainder combatplus.data matches 30..44 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.07 multiply_base
 execute if score #remainder combatplus.data matches 45..59 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.06 multiply_base

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.combatplus.arc_star","color":"white","italic":false,"with":[{"translate":"item.combatplus.netherite"}]}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6420042, HideFlags: 34, combatplus:{id:\"netherite_arc_star\", arc_star: 1b, impact_damage: 30, explosion_damage: 150}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"lore.combatplus.added_by","color":"blue","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.impact_damage","color":"dark_green","italic":false,"with":[3]},{"translate":"lore.combatplus.explosion_damage","color":"dark_green","italic":false,"with":[15]}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

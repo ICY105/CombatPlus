@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.combatplus.spear","color":"white","italic":false,"with":[{"translate":"item.combatplus.netherite"}]}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6420041, HideFlags: 34, combatplus:{id:\"netherite_spear\"}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"lore.combatplus.no_cooldown","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.attack_damage","color":"dark_green","italic":false,"with":[4.5]}]
+            },
+            {
+              "function":"set_attributes",
+              "modifiers": [
+                {
+                  "name":"generic.attack_damage",
+                  "attribute":"generic.attack_damage",
+                  "operation":"addition",
+                  "amount":3.5,
+                  "slot":"mainhand"
+                },
+                {
+                  "name":"generic.attack_speed",
+                  "attribute":"generic.attack_speed",
+                  "operation":"addition",
+                  "amount":1024,
+                  "slot":"mainhand"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

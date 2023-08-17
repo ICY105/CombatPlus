@@ -6,20 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:diamond_axe",
+          "name": "minecraft:diamond_axe",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.combatplus.hammer","color":"white","italic":false,"with":[{"translate":"item.combatplus.diamond"}]}
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6420044, HideFlags: 34, combatplus:{id:\"diamond_hammer\", style:\"linear\", knockback: 1b}}"
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.combatplus.hammer","color":"white","italic":false,"with":[{"translate":"item.combatplus.diamond"}]}
             },
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.combatplus.modified_cooldown","color":"gray","italic":false},{"translate":"lore.combatplus.modified_kb","color":"gray","italic":false},{"text":""},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
-			}
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6420044, combatplus:{id:\"diamond_hammer\", style:\"linear\", knockback: 1b}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"lore.combatplus.modified_cooldown","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
+            }
           ]
         }
       ]

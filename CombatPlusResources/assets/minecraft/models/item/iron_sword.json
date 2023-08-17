@@ -6,8 +6,6 @@
     "overrides": [
 		{ "predicate": { "custom_model_data": 6420013 }, "model": "combatplus:item/iron_katana" },
 		{ "predicate": { "custom_model_data": 6420028 }, "model": "combatplus:item/iron_sickle" },
-		{ "predicate": { "custom_model_data": 6420033 }, "model": "combatplus:item/iron_scythe" },
-		{ "predicate": { "custom_model_data": 6420038 }, "model": "combatplus:item/iron_mace" },
-		{ "predicate": { "custom_model_data": 6420043 }, "model": "combatplus:item/iron_hammer" }
+		{ "predicate": { "custom_model_data": 6420033 }, "model": "combatplus:item/iron_scythe" }
 	]
 }

@@ -1,0 +1,10 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "item/wooden_axe"
+    },
+    "overrides": [
+		{ "predicate": { "custom_model_data": 6420035 }, "model": "combatplus:item/wooden_mace" },
+		{ "predicate": { "custom_model_data": 6420040 }, "model": "combatplus:item/wooden_hammer" }
+	]
+}

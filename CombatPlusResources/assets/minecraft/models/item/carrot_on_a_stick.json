@@ -21,5 +21,9 @@
 		{ "predicate": { "custom_model_data": 6420037 }, "model": "combatplus:item/stone_arc_star" },
 		{ "predicate": { "custom_model_data": 6420038 }, "model": "combatplus:item/iron_arc_star" },
 		{ "predicate": { "custom_model_data": 6420039 }, "model": "combatplus:item/diamond_arc_star" }
+		,
+		{ "predicate": { "custom_model_data": 6420040 }, "model": "combatplus:item/netherite_knife" },
+		{ "predicate": { "custom_model_data": 6420041 }, "model": "combatplus:item/netherite_spear" },
+		{ "predicate": { "custom_model_data": 6420042 }, "model": "combatplus:item/netherite_arc_star" }
 	]
 }

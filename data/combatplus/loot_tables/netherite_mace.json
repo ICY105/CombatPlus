@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.combatplus.mace","color":"white","italic":false,"with":[{"translate":"item.combatplus.netherite"}]}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6420039, combatplus:{id:\"netherite_katana\", style:\"decay\"}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"lore.combatplus.damage_decay","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

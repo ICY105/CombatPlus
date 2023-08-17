@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.combatplus.scythe","color":"white","italic":false,"with":[{"translate":"item.combatplus.netherite"}]}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6420034, combatplus:{id:\"netherite_scythe\", style:\"decay\"}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"lore.combatplus.damage_decay","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

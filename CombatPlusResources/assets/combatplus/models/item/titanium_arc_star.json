@@ -1,0 +1,13 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "combatplus:item/titanium_arc_star"
+    },
+	"display": {
+        "ground": {
+            "rotation": [ 90, 0, 0 ],
+            "translation": [ 0, -3, 0 ],
+            "scale": [ 0.75, 0.75, 0.75 ]
+        }
+	}
+}

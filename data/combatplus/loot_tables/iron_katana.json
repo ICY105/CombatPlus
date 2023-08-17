@@ -6,39 +6,20 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:iron_sword",
+              "name": "minecraft:iron_sword",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.combatplus.katana","color":"white","italic":false,"with":[{"translate":"item.combatplus.iron"}]}
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{combatplus_id: 13, CustomModelData: 6420013, HideFlags: 34, combatplus:{base: 6.0, cooldown: -250, speed: -36}}"
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.combatplus.katana","color":"white","italic":false,"with":[{"translate":"item.combatplus.iron"}]}
             },
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"lore.combatplus.damage_combo","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.attack_damage","color":"dark_green","italic":false,"with":[6]},{"translate":"lore.combatplus.attack_combo","color":"dark_green","italic":false,"with":[1]},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
-			},
-			{
-				"function":"set_attributes",
-				"modifiers": [
-					{
-						"name":"generic.attack_damage",
-						"attribute":"generic.attack_damage",
-						"operation":"addition",
-						"amount":6,
-						"slot":"mainhand"
-					},
-					{
-						"name":"generic.attack_speed",
-						"attribute":"generic.attack_speed",
-						"operation":"addition",
-						"amount":1024,
-						"slot":"mainhand"
-					}
-				]
-			}
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6420013, combatplus:{id:\"iron_katana\", style:\"combo\"}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"lore.combatplus.damage_combo","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
+            }
           ]
         }
       ]

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+              "name": "minecraft:netherite_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.combatplus.katana","color":"white","italic":false,"with":[{"translate":"item.combatplus.netherite"}]}
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6420014, combatplus:{id:\"netherite_katana\", style:\"combo\"}}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"lore.combatplus.damage_combo","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

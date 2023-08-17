@@ -15,12 +15,15 @@
 	"item.combatplus.stone":"Stone",
 	"item.combatplus.iron":"Iron",
 	"item.combatplus.diamond":"Diamond",
+	"item.combatplus.netherite":"Netherite",
 	
 	"lore.combatplus.added_by": "Combat+",
 	"lore.combatplus.attack_speed": " %f Attack Speed",
 	"lore.combatplus.attack_damage": " %f Attack Damage",
 	"lore.combatplus.attack_decay": " %f Attack Decay",
 	"lore.combatplus.attack_combo": " %f Attack Combo",
+	"lore.combatplus.impact_damage": " %f Impact Damage",
+	"lore.combatplus.explosion_damage": " %f Explosion Damage",
 	
 	"lore.combatplus.damage_decay": "Damage Decay",
 	"lore.combatplus.damage_combo": "Combo Damage",

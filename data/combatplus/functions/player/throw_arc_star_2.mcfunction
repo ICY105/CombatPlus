@@ -1,30 +1,16 @@
+
 tp @s ~ ~ ~ ~ ~
 
-execute if score temp_1 du_data matches 1 run data modify entity @s HandItems[0].tag set from block -29999999 0 1601 Items[{Slot:0b}].tag
-execute if score temp_1 du_data matches 2 run data modify entity @s HandItems[0].tag set from block -29999999 0 1601 Items[{Slot:1b}].tag
+# tags
+tag @s add combatplus
+tag @s add combatplus.arc_star
+tag @s add combatplus.projectile
+execute if score #gamemode combatplus.data matches 1 run tag @s add combatplus.arc_star.creative
 
-execute if score temp_3 du_data matches 1 run tag @s add combatplus_creative
+scoreboard players operation @s combatplus.uuid = #uuid combatplus.data
 
-execute store result score temp_2 du_data run data get entity @s HandItems[0].tag.Damage
-scoreboard players add temp_2 du_data 4
-execute store result entity @s HandItems[0].tag.Damage int 1 run scoreboard players get temp_2 du_data
+# copy data
+data modify entity @s item set from storage combatplus:temp item
 
-execute store result score in_3 du_data run data get entity @s Pos[0] 100
-execute store result score in_4 du_data run data get entity @s Pos[1] 100
-execute store result score in_5 du_data run data get entity @s Pos[2] 100
-
-scoreboard players operation in_3 du_data -= in_0 du_data
-scoreboard players operation in_4 du_data -= in_1 du_data
-scoreboard players operation in_5 du_data -= in_2 du_data
-
-scoreboard players remove in_4 du_data 161
-
-scoreboard players set temp_0 du_data 3
-
-scoreboard players operation in_3 du_data *= temp_0 du_data
-scoreboard players operation in_4 du_data *= temp_0 du_data
-scoreboard players operation in_5 du_data *= temp_0 du_data
-
-tag @s remove combatplus_new_arc_star
-tag @s add combatplus_arc_star
-
+data modify entity @s transformation merge value {scale:[0.75,0.75,0.75],left_rotation:[0.0, 0.8, 0.5, 0.6]}
+data modify entity @s brightness set value {sky:15,block:15}

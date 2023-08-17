@@ -1,4 +1,4 @@
 
-execute if data entity @s[gamemode=!creative] SelectedItem.tag.combatplus_knife run function combatplus:player/use_coas
-execute if data entity @s[gamemode=!creative] SelectedItem.tag.combatplus_spear run function combatplus:player/use_coas
-execute if data entity @s SelectedItem.tag.combatplus run function combatplus:player/weapon_cooldown
+advancement revoke @s only combatplus:attack_entity
+
+execute if data storage combatplus:temp item.tag.combatplus.style run function combatplus:player/weapon_cooldown

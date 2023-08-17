@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"combatplus.name.spear","color":"white","italic":false,"with":[{"translate":"combatplus.resource.stone"}]}
+			  "name": {"translate":"item.combatplus.spear","color":"white","italic":false,"with":[{"translate":"item.combatplus.stone"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
@@ -18,7 +18,7 @@
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"combatplus.lore.no_cooldown","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"combatplus.lore.attack_damage","color":"dark_green","italic":false,"with":[3]},{"translate":"combatplus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"translate":"lore.combatplus.no_cooldown","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.attack_damage","color":"dark_green","italic":false,"with":[3]},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"combatplus.name.mace","color":"white","italic":false,"with":[{"translate":"combatplus.resource.golden"}]}
+			  "name": {"translate":"item.combatplus.mace","color":"white","italic":false,"with":[{"translate":"item.combatplus.golden"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
@@ -18,7 +18,7 @@
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"combatplus.lore.damage_decay","color":"gray","italic":false},{"translate":"combatplus.lore.modified_kb","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"combatplus.lore.attack_damage","color":"dark_green","italic":false,"with":[9]},{"translate":"combatplus.lore.attack_decay","color":"dark_green","italic":false,"with":[4.5]},{"translate":"combatplus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"translate":"lore.combatplus.damage_decay","color":"gray","italic":false},{"translate":"lore.combatplus.modified_kb","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.attack_damage","color":"dark_green","italic":false,"with":[9]},{"translate":"lore.combatplus.attack_decay","color":"dark_green","italic":false,"with":[4.5]},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",

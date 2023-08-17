@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"combatplus.name.hammer","color":"white","italic":false,"with":[{"translate":"combatplus.resource.wooden"}]}
+			  "name": {"translate":"item.combatplus.hammer","color":"white","italic":false,"with":[{"translate":"item.combatplus.wooden"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
@@ -18,7 +18,7 @@
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"combatplus.lore.modified_cooldown","color":"gray","italic":false},{"translate":"combatplus.lore.modified_kb","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"combatplus.lore.attack_damage","color":"dark_green","italic":false,"with":[7]},{"translate":"combatplus.lore.attack_speed","color":"dark_green","italic":false,"with":[0.7]},{"translate":"combatplus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"translate":"lore.combatplus.modified_cooldown","color":"gray","italic":false},{"translate":"lore.combatplus.modified_kb","color":"gray","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.attack_damage","color":"dark_green","italic":false,"with":[7]},{"translate":"lore.combatplus.attack_speed","color":"dark_green","italic":false,"with":[0.7]},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",

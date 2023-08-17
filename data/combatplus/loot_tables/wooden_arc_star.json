@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"combatplus.name.arc_star","color":"white","italic":false,"with":[{"translate":"combatplus.resource.wooden"}]}
+			  "name": {"translate":"item.combatplus.arc_star","color":"white","italic":false,"with":[{"translate":"item.combatplus.wooden"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
@@ -18,7 +18,7 @@
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"combatplus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
 			}
           ]
         }

@@ -10,15 +10,15 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"combatplus.name.knife","color":"white","italic":false,"with":[{"translate":"combatplus.resource.diamond"}]}
+			  "name": {"translate":"item.combatplus.knife","color":"white","italic":false,"with":[{"translate":"item.combatplus.diamond"}]}
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{combatplus_id: 19, CustomModelData: 6420019, du_dur:{enabled:1b,max_dur:380}, combatplus_knife:1b, HideFlags: 34}"
+              "tag":"{CustomModelData: 6420019, HideFlags: 34, combatplus:{id:\"diamond_knife\", knife:1b}}"
             },
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"combatplus.lore.attack_speed","color":"dark_green","italic":false,"with":[2]},{"translate":"combatplus.lore.attack_damage","color":"dark_green","italic":false,"with":[4]},{"translate":"combatplus.lore.added_by","color":"blue","italic":false}]
+			  "lore": [{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.attack_speed","color":"dark_green","italic":false,"with":[2]},{"translate":"lore.combatplus.attack_damage","color":"dark_green","italic":false,"with":[4]},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
 			},
 			{
 				"function":"set_attributes",

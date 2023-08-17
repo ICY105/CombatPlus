@@ -10,15 +10,15 @@
           "functions": [
             {
 			        "function": "minecraft:set_name",
-			        "name": {"translate":"combatplus.name.arc_star","color":"white","italic":false,"with":[{"translate":"combatplus.resource.diamond"}]}
+			        "name": {"translate":"item.combatplus.arc_star","color":"white","italic":false,"with":[{"translate":"item.combatplus.diamond"}]}
 			      },
 			      {
               "function": "minecraft:set_nbt",
-              "tag":"{combatplus_id: 39, CustomModelData: 6420039, combatplus_arc_star:1b, HideFlags: 34}"
+              "tag":"{CustomModelData: 6420039, HideFlags: 34, combatplus:{id:\"diamond_arc_star\", arc_star: 1b, impact_damage: 25, explosion_damage: 100}}"
             },
 			      {
 			        "function": "minecraft:set_lore",
-			        "lore": [{"translate":"combatplus.lore.added_by","color":"blue","italic":false}]
+			        "lore": [{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
 			      }
           ]
         }

@@ -16,7 +16,7 @@
 	"item.combatplus.iron":"Iron",
 	"item.combatplus.diamond":"Diamond",
 	
-	"lore.combatplus.added_by": "Added by: Combat+",
+	"lore.combatplus.added_by": "Combat+",
 	"lore.combatplus.attack_speed": " %f Attack Speed",
 	"lore.combatplus.attack_damage": " %f Attack Damage",
 	"lore.combatplus.attack_decay": " %f Attack Decay",

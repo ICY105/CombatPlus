@@ -1,6 +1,5 @@
 
-data modify storage combatplus:temp item set value {}
-data modify storage combatplus:temp item set from entity @s SelectedItem
+scoreboard players set @s combatplus.cooldown.pause 1
 
 # get attack speed
 attribute @s minecraft:generic.attack_speed modifier remove dd087eab-976d-41a5-a84b-9fdee0fdf97f

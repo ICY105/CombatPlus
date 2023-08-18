@@ -3,10 +3,7 @@ Download: https://github.com/ImCoolYeah105/CombatPlus/releases
 # Alternitive Combat
 A datapack adding some new weapons to spice up combat in Minecraft.
 
-Requires the latest version of Datapack Utils: https://github.com/ImCoolYeah105/Datapack-Utilities/releases
-
 Currently Adds:
-
 1. Sickles: linear cooldown only triggering on hit instead of on swing
 2. Hammers: axe-like variant to sickles
 3. Scythes: Damage Decay system- damage decrease slightly on hit and recharges over time

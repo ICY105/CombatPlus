@@ -1,5 +1,5 @@
 
-scoreboard players set @s combatplus.cooldown.pause 1
+tag @s add combatplus.cooldown_triggered
 
 # get attack speed
 attribute @s minecraft:generic.attack_speed modifier remove dd087eab-976d-41a5-a84b-9fdee0fdf97f
@@ -12,7 +12,13 @@ execute if data storage combatplus:temp item.tag.combatplus{style:"linear"} run 
 execute if data storage combatplus:temp item.tag.combatplus{style:"decay"} run scoreboard players set #style combatplus.data 2
 execute if data storage combatplus:temp item.tag.combatplus{style:"combo"} run scoreboard players set #style combatplus.data 3
 
-# modif cooldown
+# katana durability protection
+execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. store result score #durability combatplus.data run data get storage combatplus:temp item.tag.Damage
+execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. if score #durability combatplus.data matches 1.. run scoreboard players remove #durability combatplus.data 1
+execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. store result storage combatplus:temp damage int 1 run scoreboard players get #durability combatplus.data
+execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. run item modify entity @s weapon.mainhand combatplus:set_durability
+
+# modify cooldown
 execute if score #style combatplus.data matches 1 run scoreboard players set @s combatplus.cooldown 0
 
 execute if score #style combatplus.data matches 2 run scoreboard players set @s combatplus.cooldown.pause 15

@@ -2,6 +2,8 @@
 execute unless score @s combatplus.uuid matches -2147483648.. store result score @s combatplus.uuid run data get entity @s UUID[0]
 
 # result cooldown if item changed (ie. changed slots), then run attack styles
+tag @s remove combatplus.cooldown_triggered
+
 data modify storage combatplus:temp item set value {}
 data modify storage combatplus:temp item set from entity @s SelectedItem
 

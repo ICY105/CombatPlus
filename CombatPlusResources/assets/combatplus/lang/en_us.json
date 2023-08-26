@@ -27,7 +27,7 @@
 	
 	"lore.combatplus.damage_decay": "Damage Decay",
 	"lore.combatplus.damage_combo": "Combo Damage",
-	"lore.combatplus.no_cooldown": "No Cooldown (1.8)",
-	"lore.combatplus.modified_cooldown": "Linear 1.9 Cooldown",
+	"lore.combatplus.no_cooldown": "No Cooldown",
+	"lore.combatplus.modified_cooldown": "Linear Cooldown",
 	"lore.combatplus.modified_kb": "+Knockback"
 }

@@ -1,0 +1,18 @@
+{
+	"required":false,
+	"values":[
+		"#combatplus:unbreakable",
+		"#minecraft:anvil",
+		"minecraft:obsidian",
+		"minecraft:crying_obsidian",
+		"minecraft:enchanting_table",
+		"minecraft:netherite_block",
+		"minecraft:ancient_debris",
+		"minecraft:respawn_anchor",
+		"minecraft:reinforced_deepslate",
+		"minecraft:ender_chest",
+		"minecraft:lava",
+		"minecraft:water",
+		"minecraft:bubble_column"
+	]
+}

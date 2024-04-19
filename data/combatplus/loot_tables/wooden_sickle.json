@@ -10,15 +10,42 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.combatplus.sickle","color":"white","italic":false,"with":[{"translate":"item.combatplus.wooden"}]}
+              "name": {
+                "translate": "item.combatplus.sickle",
+                "color": "white",
+                "italic": false,
+                "with": [
+                  {
+                    "translate": "item.combatplus.wooden"
+                  }
+                ]
+              }
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6420025, combatplus:{id:\"wooden_sickle\", style:\"linear\"}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{combatplus:{id:\"wooden_sickle\",style:\"linear\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6420025
+              }
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [{"translate":"lore.combatplus.modified_cooldown","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "lore.combatplus.modified_cooldown",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "lore.combatplus.added_by",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
             }
           ]
         }

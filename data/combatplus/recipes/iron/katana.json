@@ -14,6 +14,16 @@
         }
     },
     "result": {
-        "item": "minecraft:knowledge_book"
+        "count": 1,
+        "id": "minecraft:iron_sword",
+        "components": {
+            "minecraft:custom_model_data": 6420013,
+            "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_combo\"}",
+                "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
+            ],
+            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.katana\",\"with\":[{\"translate\":\"item.combatplus.iron\"}]}",
+            "minecraft:custom_data": {"combatplus": {"style": "combo", "id": "iron_katana"}}
+        }
     }
 }

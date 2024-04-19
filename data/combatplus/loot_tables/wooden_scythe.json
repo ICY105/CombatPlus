@@ -10,15 +10,42 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.combatplus.scythe","color":"white","italic":false,"with":[{"translate":"item.combatplus.wooden"}]}
+              "name": {
+                "translate": "item.combatplus.scythe",
+                "color": "white",
+                "italic": false,
+                "with": [
+                  {
+                    "translate": "item.combatplus.wooden"
+                  }
+                ]
+              }
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6420030, combatplus:{id:\"wooden_scythe\", style:\"decay\"}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{combatplus:{id:\"wooden_scythe\",style:\"decay\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6420030
+              }
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [{"translate":"lore.combatplus.damage_decay","color":"gray","italic":false},{"translate":"lore.combatplus.added_by","color":"blue","italic":false}]
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "lore.combatplus.damage_decay",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "lore.combatplus.added_by",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
             }
           ]
         }

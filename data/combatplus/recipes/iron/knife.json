@@ -17,6 +17,41 @@
 		}
     },
     "result": {
-        "item": "minecraft:knowledge_book"
+        "count": 1,
+        "id": "minecraft:carrot_on_a_stick",
+        "components": {
+            "minecraft:custom_model_data": 6420018,
+            "minecraft:lore": [
+                "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}",
+                "\"\"",
+                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.modifiers.mainhand\"}",
+                "{\"color\":\"dark_green\",\"italic\":false,\"translate\":\"lore.combatplus.attack_speed\",\"with\":[2]}",
+                "{\"color\":\"dark_green\",\"italic\":false,\"translate\":\"lore.combatplus.attack_damage\",\"with\":[3.5]}"
+            ],
+            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.knife\",\"with\":[{\"translate\":\"item.combatplus.iron\"}]}",
+            "minecraft:custom_data": {"combatplus": {"knife": 1, "id": "iron_knife"}},
+            "minecraft:hide_additional_tooltip": {},
+            "minecraft:attribute_modifiers": {
+                "show_in_tooltip": false,
+                "modifiers": [
+                    {
+                        "type": "minecraft:generic.attack_speed",
+                        "uuid": [-1953028026,-856931226,-1240793240,-159823154],
+                        "name": "attack_speed",
+                        "amount": -2.0,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                    },
+                    {
+                        "type": "minecraft:generic.attack_damage",
+                        "uuid": [-1953028026,-856931226,-1240793240,-159821354],
+                        "name": "attack_damage",
+                        "amount": 2.5,
+                        "operation": "add_value",
+                        "slot": "mainhand"
+                    }
+                ]
+            }
+        }
     }
 }

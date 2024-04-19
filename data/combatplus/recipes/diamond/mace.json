@@ -14,6 +14,16 @@
         }
     },
     "result": {
-        "item": "minecraft:knowledge_book"
+        "count": 1,
+        "id": "minecraft:diamond_axe",
+        "components": {
+            "minecraft:custom_model_data": 6420040,
+            "minecraft:lore": [
+                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_decay\"}",
+                "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
+            ], 
+            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.mace\",\"with\":[{\"translate\":\"item.combatplus.diamond\"}]}",
+            "minecraft:custom_data": {"combatplus": {"style": "linear", "id": "diamond_mace"}}
+        }
     }
 }

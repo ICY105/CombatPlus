@@ -10,15 +10,67 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.combatplus.arc_star","color":"white","italic":false,"with":[{"translate":"item.combatplus.wooden"}]}
+              "name": {
+                "translate": "item.combatplus.arc_star",
+                "color": "white",
+                "italic": false,
+                "with": [
+                  {
+                    "translate": "item.combatplus.wooden"
+                  }
+                ]
+              }
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6420035, HideFlags: 34, combatplus:{id:\"wooden_arc_star\", arc_star: 1b, impact_damage: 10, explosion_damage: 25}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{combatplus:{id:\"wooden_arc_star\",arc_star:1b,impact_damage:10,explosion_damage:25}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6420035,
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {},
+                "minecraft:max_stack_size": 4,
+                "!minecraft:max_damage": {},
+                "!minecraft:tool": {}
+              }
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [{"translate":"lore.combatplus.added_by","color":"blue","italic":false},{"text":""},{"translate":"item.modifiers.mainhand","color":"gray","italic":false},{"translate":"lore.combatplus.impact_damage","color":"dark_green","italic":false,"with":[1]},{"translate":"lore.combatplus.explosion_damage","color":"dark_green","italic":false,"with":[2.5]}]
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "lore.combatplus.added_by",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "item.modifiers.mainhand",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "translate": "lore.combatplus.impact_damage",
+                  "color": "dark_green",
+                  "italic": false,
+                  "with": [
+                    1
+                  ]
+                },
+                {
+                  "translate": "lore.combatplus.explosion_damage",
+                  "color": "dark_green",
+                  "italic": false,
+                  "with": [2.5]
+                }
+              ]
             }
           ]
         }

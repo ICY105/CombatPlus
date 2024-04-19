@@ -18,8 +18,8 @@ scoreboard players set #cons.150 combatplus.data 150
 
 # version
 scoreboard players set #combatplus.ver.major load.status 2
-scoreboard players set #combatplus.ver.minor load.status 0
-scoreboard players set #combatplus.ver.fix load.status 2
+scoreboard players set #combatplus.ver.minor load.status 1
+scoreboard players set #combatplus.ver.fix load.status 0
 
 # install message
 schedule function combatplus:install 2s

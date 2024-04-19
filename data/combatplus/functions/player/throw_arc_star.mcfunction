@@ -1,8 +1,8 @@
 
 # find slot
 scoreboard players set #slot combatplus.data 0
-execute if data entity @s SelectedItem.tag.combatplus.arc_star run scoreboard players set #slot combatplus.data 1
-execute if data entity @s Inventory[{Slot:-106b}].tag.combatplus.arc_star run scoreboard players set #slot combatplus.data 2
+execute if data entity @s SelectedItem.components."minecraft:custom_data".combatplus.arc_star run scoreboard players set #slot combatplus.data 1
+execute if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".combatplus.arc_star run scoreboard players set #slot combatplus.data 2
 
 # copy item and clear slot
 execute if score #slot combatplus.data matches 1 run data modify storage combatplus:temp item set from entity @s SelectedItem

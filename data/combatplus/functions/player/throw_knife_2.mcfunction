@@ -10,9 +10,9 @@ execute if score #gamemode combatplus.data matches 1 run tag @s add combatplus.k
 scoreboard players operation @s combatplus.uuid = #uuid combatplus.data
 
 # damage item
-execute store result score #durability combatplus.data run data get storage combatplus:temp item.tag.Damage
+execute store result score #durability combatplus.data run data get storage combatplus:temp item.components."minecraft:damage"
 scoreboard players add #durability combatplus.data 1
-execute store result storage combatplus:temp item.tag.Damage int 1 run scoreboard players get #durability combatplus.data
+execute store result storage combatplus:temp item.components."minecraft:damage" int 1 run scoreboard players get #durability combatplus.data
 
 # copy data
 data modify entity @s item set from storage combatplus:temp item

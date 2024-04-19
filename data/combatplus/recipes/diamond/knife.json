@@ -20,7 +20,7 @@
         "count": 1,
         "id": "minecraft:carrot_on_a_stick",
         "components": {
-            "minecraft:custom_model_data": 6420020,
+            "minecraft:custom_model_data": 6420019,
             "minecraft:lore": [
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}",
                 "\"\"",

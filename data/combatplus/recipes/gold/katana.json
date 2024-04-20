@@ -17,7 +17,7 @@
         "count": 1,
         "id": "minecraft:golden_sword",
         "components": {
-            "minecraft:custom_model_data": 6420014,
+            "minecraft:custom_model_data": 6420011,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_combo\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"

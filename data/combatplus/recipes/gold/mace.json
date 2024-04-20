@@ -17,7 +17,7 @@
         "count": 1,
         "id": "minecraft:golden_axe",
         "components": {
-            "minecraft:custom_model_data": 6420039,
+            "minecraft:custom_model_data": 6420036,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_decay\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"

@@ -17,7 +17,7 @@
         "count": 1,
         "id": "minecraft:diamond_axe",
         "components": {
-            "minecraft:custom_model_data": 6420045,
+            "minecraft:custom_model_data": 6420044,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.modified_cooldown\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"

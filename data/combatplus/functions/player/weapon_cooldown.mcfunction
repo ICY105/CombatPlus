@@ -16,7 +16,7 @@ execute if data storage combatplus:temp item.components."minecraft:custom_data".
 execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. store result score #durability combatplus.data run data get storage combatplus:temp item.components."minecraft:damage"
 execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. if score #durability combatplus.data matches 1.. run scoreboard players remove #durability combatplus.data 1
 execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. store result storage combatplus:temp damage int 1 run scoreboard players get #durability combatplus.data
-execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. run function combatplus:m.set_item with storage combatplus:temp item
+execute if score #style combatplus.data matches 3 if score @s combatplus.cooldown.pause matches 8.. run function combatplus:utils/m.set_item with storage combatplus:temp item
 
 # modify cooldown
 execute if score #style combatplus.data matches 1 run scoreboard players set @s combatplus.cooldown 0

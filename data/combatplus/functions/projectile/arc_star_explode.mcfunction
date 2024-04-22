@@ -14,28 +14,28 @@ execute if score #damage combatplus.data matches 50..99 as @e[type=#combatplus:l
 execute if score #damage combatplus.data matches 100.. as @e[type=#combatplus:living,distance=..4,sort=nearest] run function combatplus:damage_entity with storage combatplus:temp obj
 
 # break block
-execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ unless block ~ ~ ~ #combatplus:explosion_proof run setblock ~ ~ ~ air destroy
-execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ unless block ~1 ~ ~ #combatplus:explosion_proof run setblock ~1 ~ ~ air destroy
-execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ unless block ~ ~1 ~ #combatplus:explosion_proof run setblock ~ ~1 ~ air destroy
-execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ unless block ~ ~ ~1 #combatplus:explosion_proof run setblock ~ ~ ~1 air destroy
-execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ unless block ~-1 ~ ~ #combatplus:explosion_proof run setblock ~-1 ~ ~ air destroy
-execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ unless block ~ ~-1 ~ #combatplus:explosion_proof run setblock ~ ~-1 ~ air destroy
-execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ unless block ~ ~ ~-1 #combatplus:explosion_proof run setblock ~ ~ ~-1 air destroy
+execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 50.. positioned ~1 ~1 ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 50.. positioned ~ ~2 ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~1 run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 50.. positioned ~-1 ~1 ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 50.. positioned ~ ~ ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 50.. positioned ~ ~1 ~-1 run function combatplus:projectile/arc_star_break_block
 
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~1 ~ ~1 #combatplus:explosion_proof run setblock ~1 ~ ~1 air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~1 ~ ~-1 #combatplus:explosion_proof run setblock ~1 ~ ~-1 air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~-1 ~ ~1 #combatplus:explosion_proof run setblock ~-1 ~ ~1 air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~-1 ~ ~-1 #combatplus:explosion_proof run setblock ~-1 ~ ~-1 air destroy
+execute if score #damage combatplus.data matches 100.. positioned ~1 ~1 ~1 run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~1 ~1 ~-1 run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~-1 ~1 ~1 run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~-1 ~1 ~-1 run function combatplus:projectile/arc_star_break_block
 
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~1 ~1 ~ #combatplus:explosion_proof run setblock ~1 ~1 ~ air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~1 ~-1 ~ #combatplus:explosion_proof run setblock ~1 ~-1 ~ air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~-1 ~1 ~ #combatplus:explosion_proof run setblock ~-1 ~1 ~ air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~-1 ~-1 ~ #combatplus:explosion_proof run setblock ~-1 ~-1 ~ air destroy
+execute if score #damage combatplus.data matches 100.. positioned ~1 ~2 ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~1 ~ ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~-1 ~2 ~ run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~-1 ~ ~ run function combatplus:projectile/arc_star_break_block
 
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~ ~1 ~1 #combatplus:explosion_proof run setblock ~ ~1 ~1 air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~ ~-1 ~1 #combatplus:explosion_proof run setblock ~ ~-1 ~1 air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~ ~1 ~-1 #combatplus:explosion_proof run setblock ~ ~1 ~-1 air destroy
-execute if score #damage combatplus.data matches 100.. positioned ~ ~1 ~ unless block ~ ~-1 ~-1 #combatplus:explosion_proof run setblock ~ ~-1 ~-1 air destroy
+execute if score #damage combatplus.data matches 100.. positioned ~ ~2 ~1 run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~ ~ ~1 run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~ ~2 ~-1 run function combatplus:projectile/arc_star_break_block
+execute if score #damage combatplus.data matches 100.. positioned ~ ~ ~-1 run function combatplus:projectile/arc_star_break_block
 
 # effects
 particle minecraft:dust{color:[0.0, 0.5, 1.0],scale: 1.0} ~ ~1 ~ 1 1 1 1 150 normal

@@ -10,16 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.combatplus.scythe",
-                "color": "white",
-                "italic": false,
-                "with": [
-                  {
-                    "translate": "item.combatplus.diamond"
-                  }
-                ]
-              }
+              "name": {"translate": "item.combatplus.scythe","color": "white","italic": false,"with": [{"translate": "item.combatplus.diamond"}]}
             },
             {
               "function": "minecraft:set_custom_data",
@@ -28,23 +19,15 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6420034
+                "minecraft:item_model": "combatplus:item/diamond_scythe"
               }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.combatplus.damage_decay",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "translate": "lore.combatplus.added_by",
-                  "color": "blue",
-                  "italic": false
-                }
+                {"translate": "lore.combatplus.damage_decay","color": "gray","italic": false},
+                {"translate": "lore.combatplus.added_by","color": "blue","italic": false}
               ]
             }
           ]

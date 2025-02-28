@@ -2,27 +2,24 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "ddd",
-        "ddd",
+        "dSd",
         " S "
     ],
     "key": {
-        "d": {
-            "item": "minecraft:cobblestone"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        }
+        "d": "minecraft:cobblestone",
+        "S": "minecraft:stick"
     },
     "result": {
         "count": 1,
         "id": "minecraft:stone_axe",
         "components": {
-            "minecraft:custom_model_data": 6420042,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.modified_cooldown\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ], 
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.hammer\",\"with\":[{\"translate\":\"item.combatplus.stone\"}]}",
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.hammer\", \"with\": [{\"translate\": \"item.combatplus.stone\"}]}]",
+            "minecraft:item_model": "combatplus:item/stone_hammer",
+            "!minecraft:tool": {},
             "minecraft:custom_data": {"combatplus": {"style": "linear", "id": "stone_hammer", "knockback": 1}}
         }
     }

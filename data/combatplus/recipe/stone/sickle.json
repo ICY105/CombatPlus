@@ -6,23 +6,19 @@
         "Sd "
     ],
     "key": {
-        "d": {
-            "item": "minecraft:cobblestone"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        }
+        "d": "minecraft:cobblestone",
+        "S": "minecraft:stick"
     },
     "result": {
         "count": 1,
         "id": "minecraft:stone_sword",
         "components": {
-            "minecraft:custom_model_data": 6420027,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.modified_cooldown\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ],
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.sickle\",\"with\":[{\"translate\":\"item.combatplus.stone\"}]}",
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.sickle\", \"with\": [{\"translate\": \"item.combatplus.stone\"}]}]",
+            "minecraft:item_model": "combatplus:item/stone_sickle",
             "minecraft:custom_data": {"combatplus": {"style": "linear", "id": "stone_sickle"}}
         }
     }

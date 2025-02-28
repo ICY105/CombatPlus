@@ -2,27 +2,24 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "ddd",
-        "ddd",
+        "dSd",
         " S "
     ],
     "key": {
-        "d": {
-            "item": "minecraft:diamond"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        }
+        "d": "minecraft:diamond",
+        "S": "minecraft:stick"
     },
     "result": {
         "count": 1,
         "id": "minecraft:diamond_axe",
         "components": {
-            "minecraft:custom_model_data": 6420044,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.modified_cooldown\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ], 
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.hammer\",\"with\":[{\"translate\":\"item.combatplus.diamond\"}]}",
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.hammer\", \"with\": [{\"translate\": \"item.combatplus.diamond\"}]}]",
+            "minecraft:item_model": "combatplus:item/diamond_hammer",
+            "!minecraft:tool": {},
             "minecraft:custom_data": {"combatplus": {"style": "linear", "id": "diamond_hammer", "knockback": 1}}
         }
     }

@@ -31,7 +31,7 @@
                     {
                       "type": "minecraft:attack_speed",
                       "id": "combatplus:knife_attack_speed",
-                      "amount": -3.0,
+                      "amount": -3,
                       "operation": "add_value",
                       "slot": "mainhand"
                     }

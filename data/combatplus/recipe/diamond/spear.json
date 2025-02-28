@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "ddd",
+        " dd",
         " Sd",
         "S  "
     ],
@@ -14,12 +14,12 @@
         "id": "minecraft:diamond_sword",
         "components": {
             "minecraft:lore": [
-                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_decay\"}",
+                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.range_cooldown\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ],
-            "minecraft:item_name": "[{\"translate\": \"item.combatplus.scythe\", \"with\": [{\"translate\": \"item.combatplus.diamond\"}]}]",
-            "minecraft:item_model": "combatplus:item/diamond_scythe",
-            "minecraft:custom_data": {"combatplus": {"style": "decay", "id": "diamond_scythe"}}
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.spear\", \"with\": [{\"translate\": \"item.combatplus.diamond\"}]}]",
+            "minecraft:item_model": "combatplus:item/diamond_spear",
+            "minecraft:custom_data": {"combatplus": {"style": "range", "id": "diamond_spear"}}
         }
     }
 }

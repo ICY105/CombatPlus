@@ -1,7 +1,7 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "ddd",
+        " dd",
         " Sd",
         "S  "
     ],
@@ -14,12 +14,12 @@
         "id": "minecraft:iron_sword",
         "components": {
             "minecraft:lore": [
-                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_decay\"}",
+                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.range_cooldown\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ],
-            "minecraft:item_name": "[{\"translate\": \"item.combatplus.scythe\", \"with\": [{\"translate\": \"item.combatplus.iron\"}]}]",
-            "minecraft:item_model": "combatplus:item/iron_scythe",
-            "minecraft:custom_data": {"combatplus": {"style": "decay", "id": "iron_scythe"}}
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.spear\", \"with\": [{\"translate\": \"item.combatplus.iron\"}]}]",
+            "minecraft:item_model": "combatplus:item/iron_spear",
+            "minecraft:custom_data": {"combatplus": {"style": "range", "id": "iron_spear"}}
         }
     }
 }

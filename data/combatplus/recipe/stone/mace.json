@@ -6,24 +6,21 @@
         "S  "
     ],
     "key": {
-        "D": {
-            "item": "minecraft:stone"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        }
+        "D": "minecraft:stone",
+        "S": "minecraft:stick"
     },
     "result": {
         "count": 1,
         "id": "minecraft:stone_axe",
         "components": {
-            "minecraft:custom_model_data": 6420037,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_decay\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ], 
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.mace\",\"with\":[{\"translate\":\"item.combatplus.stone\"}]}",
-            "minecraft:custom_data": {"combatplus": {"style": "linear", "id": "stone_mace"}}
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.mace\", \"with\": [{\"translate\": \"item.combatplus.stone\"}]}]",
+            "minecraft:item_model": "combatplus:item/stone_mace",
+            "!minecraft:tool": {},
+            "minecraft:custom_data": {"combatplus": {"style": "decay", "id": "stone_mace"}}
         }
     }
 }

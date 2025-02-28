@@ -10,14 +10,14 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{combatplus:{id:\"arc_star\",arc_star:1b,impact_damage:20,explosion_damage:80}}"
+              "tag": "{combatplus:{id:\"arc_star\", impact_damage:20, explosion_damage:80}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.combatplus.arc_star\"}]",
                 "minecraft:item_model": "combatplus:item/arc_star",
-                "minecraft:max_stack_size": 4,
+                "minecraft:max_stack_size": 16,
                 "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "bow"},
                 "!minecraft:food": {}
               }

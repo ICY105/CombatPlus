@@ -6,24 +6,21 @@
         "S  "
     ],
     "key": {
-        "D": {
-            "item": "minecraft:iron_block"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        }
+        "D": "minecraft:iron_block",
+        "S": "minecraft:stick"
     },
     "result": {
         "count": 1,
         "id": "minecraft:iron_axe",
         "components": {
-            "minecraft:custom_model_data": 6420038,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_decay\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ], 
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.mace\",\"with\":[{\"translate\":\"item.combatplus.iron\"}]}",
-            "minecraft:custom_data": {"combatplus": {"style": "linear", "id": "iron_mace"}}
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.mace\", \"with\": [{\"translate\": \"item.combatplus.iron\"}]}]",
+            "minecraft:item_model": "combatplus:item/iron_mace",
+            "!minecraft:tool": {},
+            "minecraft:custom_data": {"combatplus": {"style": "decay", "id": "iron_mace"}}
         }
     }
 }

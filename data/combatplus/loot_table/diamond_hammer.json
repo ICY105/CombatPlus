@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{combatplus:{id:\"diamond_hammer\",style:\"linear\",knockback:1b}}"
+              "tag": "{combatplus:{id:\"diamond_hammer\", style:\"linear\", knockback:1b}}"
             },
             {
               "function": "minecraft:set_components",

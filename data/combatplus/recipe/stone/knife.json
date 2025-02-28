@@ -1,57 +1,50 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        " d ",
-        " t ",
-        " S "
-    ],
-    "key": {
-        "t": {
-            "item": "minecraft:string"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        },
-		"d": {
-			"item": "minecraft:cobblestone"
-		}
-    },
-    "result": {
-        "count": 1,
-        "id": "minecraft:carrot_on_a_stick",
-        "components": {
-            "minecraft:custom_model_data": 6420018,
-            "minecraft:lore": [
-                "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}",
-                "\"\"",
-                "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.modifiers.mainhand\"}",
-                "{\"color\":\"dark_green\",\"italic\":false,\"translate\":\"lore.combatplus.attack_speed\",\"with\":[2]}",
-                "{\"color\":\"dark_green\",\"italic\":false,\"translate\":\"lore.combatplus.attack_damage\",\"with\":[3]}"
-            ],
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.knife\",\"with\":[{\"translate\":\"item.combatplus.stone\"}]}",
-            "minecraft:custom_data": {"combatplus": {"knife": 1, "id": "stone_knife"}},
-            "minecraft:hide_additional_tooltip": {},
-            "minecraft:attribute_modifiers": {
-                "show_in_tooltip": false,
-                "modifiers": [
-                    {
-                        "type": "minecraft:generic.attack_speed",
-                        "uuid": [-1953028026,-856931226,-1240793240,-159823154],
-                        "name": "attack_speed",
-                        "amount": -2.0,
-                        "operation": "add_value",
-                        "slot": "mainhand"
-                    },
-                    {
-                        "type": "minecraft:generic.attack_damage",
-                        "uuid": [-1953028026,-856931226,-1240793240,-159821354],
-                        "name": "attack_damage",
-                        "amount": 2,
-                        "operation": "add_value",
-                        "slot": "mainhand"
-                    }
-                ]
-            }
-        }
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " d ",
+    " t ",
+    " S "
+  ],
+  "key": {
+    "t": "minecraft:string",
+    "S": "minecraft:stick",
+    "d": "minecraft:cobblestone"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:stone_sword",
+    "components": {
+      "minecraft:lore": [
+        "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}",
+        "\"\"",
+        "{\"color\":\"gray\",\"italic\":false,\"translate\":\"item.modifiers.mainhand\"}",
+        "{\"color\":\"dark_green\",\"italic\":false,\"translate\":\"lore.combatplus.attack_damage\",\"with\":[4]}",
+        "{\"color\":\"dark_green\",\"italic\":false,\"translate\":\"lore.combatplus.attack_speed\",\"with\":[1.4]}"
+      ],
+      "minecraft:item_name": "[{\"translate\": \"item.combatplus.knife\", \"with\": [{\"translate\": \"item.combatplus.stone\"}]}]",
+      "minecraft:item_model": "combatplus:item/stone_knife",
+      "minecraft:max_damage": 781,
+      "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "bow"},
+      "minecraft:attribute_modifiers": {
+        "modifiers": [
+          {
+            "type": "minecraft:attack_damage",
+            "id": "combatplus:knife_attack_damage",
+            "amount": 3,
+            "operation": "add_value",
+            "slot": "mainhand"
+          },
+          {
+            "type": "minecraft:attack_speed",
+            "id": "combatplus:knife_attack_speed",
+            "amount": -2.6,
+            "operation": "add_value",
+            "slot": "mainhand"
+          }
+        ],
+        "show_in_tooltip": false
+      },
+      "minecraft:custom_data": {"combatplus": {"knife": 1, "id": "stone_knife"}}
     }
+  }
 }

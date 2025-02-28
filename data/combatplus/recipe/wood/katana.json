@@ -6,23 +6,19 @@
         "S  "
     ],
     "key": {
-        "d": {
-            "tag": "minecraft:planks"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        }
+        "d": "#minecraft:planks",
+        "S": "minecraft:stick"
     },
     "result": {
         "count": 1,
         "id": "minecraft:wooden_sword",
         "components": {
-            "minecraft:custom_model_data": 6420010,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.damage_combo\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ],
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.katana\",\"with\":[{\"translate\":\"item.combatplus.wooden\"}]}",
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.katana\", \"with\": [{\"translate\": \"item.combatplus.wooden\"}]}]",
+            "minecraft:item_model": "combatplus:item/wooden_katana",
             "minecraft:custom_data": {"combatplus": {"style": "combo", "id": "wooden_katana"}}
         }
     }

@@ -6,23 +6,19 @@
         "Sd "
     ],
     "key": {
-        "d": {
-            "tag": "minecraft:planks"
-        },
-        "S": {
-            "item": "minecraft:stick"
-        }
+        "d": "#minecraft:planks",
+        "S": "minecraft:stick"
     },
     "result": {
         "count": 1,
         "id": "minecraft:wooden_sword",
         "components": {
-            "minecraft:custom_model_data": 6420025,
             "minecraft:lore": [
                 "{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.combatplus.modified_cooldown\"}",
                 "{\"color\":\"blue\",\"italic\":false,\"translate\":\"lore.combatplus.added_by\"}"
             ],
-            "minecraft:custom_name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"item.combatplus.sickle\",\"with\":[{\"translate\":\"item.combatplus.wooden\"}]}",
+            "minecraft:item_name": "[{\"translate\": \"item.combatplus.sickle\", \"with\": [{\"translate\": \"item.combatplus.wooden\"}]}]",
+            "minecraft:item_model": "combatplus:item/wooden_sickle",
             "minecraft:custom_data": {"combatplus": {"style": "linear", "id": "wooden_sickle"}}
         }
     }

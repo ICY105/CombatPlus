@@ -6,21 +6,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:wooden_sword",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.combatplus.knife",
-                "color": "white",
-                "italic": false,
-                "with": [
-                  {
-                    "translate": "item.combatplus.wooden"
-                  }
-                ]
-              }
-            },
             {
               "function": "minecraft:set_custom_data",
               "tag": "{combatplus:{id:\"wooden_knife\",knife:1b}}"
@@ -28,68 +15,39 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6420015,
+                "minecraft:item_name": "[{\"translate\": \"item.combatplus.knife\", \"with\": [{\"translate\": \"item.combatplus.wooden\"}]}]",
+                "minecraft:item_model": "combatplus:item/wooden_knife",
+                "minecraft:max_damage": 30,
                 "minecraft:attribute_modifiers": {
-                  "modifiers": [],
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "combatplus:knife_attack_damage",
+                      "amount": 3,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "combatplus:knife_attack_speed",
+                      "amount": -3.0,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
                   "show_in_tooltip": false
-                },
-                "minecraft:hide_additional_tooltip": {}
+                }
               }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.combatplus.added_by",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": ""
-                },
-                {
-                  "translate": "item.modifiers.mainhand",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "translate": "lore.combatplus.attack_speed",
-                  "color": "dark_green",
-                  "italic": false,
-                  "with": [
-                    2
-                  ]
-                },
-                {
-                  "translate": "lore.combatplus.attack_damage",
-                  "color": "dark_green",
-                  "italic": false,
-                  "with": [
-                    2.5
-                  ]
-                }
-              ]
-            },
-            {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "name": "generic.attack_damage",
-                  "attribute": "generic.attack_damage",
-                  "operation": "add_value",
-                  "amount": 1.5,
-                  "slot": "mainhand",
-                  "id": "64200000-0001-0000-0000-64200000000"
-                },
-                {
-                  "name": "generic.attack_speed",
-                  "attribute": "generic.attack_speed",
-                  "operation": "add_value",
-                  "amount": -2.0,
-                  "slot": "mainhand",
-                  "id": "64200000-0002-0000-0000-64200000000"
-                }
+                {"translate": "lore.combatplus.added_by","color": "blue","italic": false},
+                {"text": ""},
+                {"translate": "item.modifiers.mainhand","color": "gray","italic": false},
+                {"translate": "lore.combatplus.attack_damage","color": "dark_green","italic": false,"with": [4]},
+                {"translate": "lore.combatplus.attack_speed","color": "dark_green","italic": false,"with": [1]}
               ]
             }
           ]

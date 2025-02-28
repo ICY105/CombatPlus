@@ -9,42 +9,23 @@
           "name": "minecraft:golden_axe",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.combatplus.mace",
-                "color": "white",
-                "italic": false,
-                "with": [
-                  {
-                    "translate": "item.combatplus.golden"
-                  }
-                ]
-              }
-            },
-            {
               "function": "minecraft:set_custom_data",
               "tag": "{combatplus:{id:\"golden_katana\",style:\"decay\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6420036
+                "minecraft:item_name": "[{\"translate\": \"item.combatplus.mace\", \"with\": [{\"translate\": \"item.combatplus.golden\"}]}]",
+                "minecraft:item_model": "combatplus:item/golden_mace",
+                "!minecraft:tool": {}
               }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.combatplus.damage_decay",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "translate": "lore.combatplus.added_by",
-                  "color": "blue",
-                  "italic": false
-                }
+                {"translate": "lore.combatplus.damage_decay","color": "gray","italic": false},
+                {"translate": "lore.combatplus.added_by","color": "blue","italic": false}
               ]
             }
           ]

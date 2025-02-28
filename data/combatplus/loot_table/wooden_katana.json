@@ -9,42 +9,22 @@
           "name": "minecraft:wooden_sword",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.combatplus.katana",
-                "color": "white",
-                "italic": false,
-                "with": [
-                  {
-                    "translate": "item.combatplus.wooden"
-                  }
-                ]
-              }
-            },
-            {
               "function": "minecraft:set_custom_data",
               "tag": "{combatplus:{id:\"wooden_katana\",style:\"combo\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6420010
+                "minecraft:item_name": "[{\"translate\": \"item.combatplus.katana\", \"with\": [{\"translate\": \"item.combatplus.wooden\"}]}]",
+                "minecraft:item_model": "combatplus:item/wooden_katana"
               }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.combatplus.damage_combo",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "translate": "lore.combatplus.added_by",
-                  "color": "blue",
-                  "italic": false
-                }
+                {"translate": "lore.combatplus.damage_combo","color": "gray","italic": false},
+                {"translate": "lore.combatplus.added_by","color": "blue","italic": false}
               ]
             }
           ]

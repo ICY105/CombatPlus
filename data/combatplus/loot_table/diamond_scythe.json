@@ -9,16 +9,13 @@
           "name": "minecraft:diamond_sword",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {"translate": "item.combatplus.scythe","color": "white","italic": false,"with": [{"translate": "item.combatplus.diamond"}]}
-            },
-            {
               "function": "minecraft:set_custom_data",
               "tag": "{combatplus:{id:\"diamond_scythe\",style:\"decay\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.combatplus.scythe\", \"with\": [{\"translate\": \"item.combatplus.diamond\"}]}]",
                 "minecraft:item_model": "combatplus:item/diamond_scythe"
               }
             },

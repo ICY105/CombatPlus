@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "combatplus:item/diamond_arc_star"
+    "model": "combatplus:item/arc_star"
   }
 }

@@ -9,42 +9,22 @@
           "name": "minecraft:iron_sword",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.combatplus.sickle",
-                "color": "white",
-                "italic": false,
-                "with": [
-                  {
-                    "translate": "item.combatplus.iron"
-                  }
-                ]
-              }
-            },
-            {
               "function": "minecraft:set_custom_data",
               "tag": "{combatplus:{id:\"iron_sickle\",style:\"linear\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6420028
+                "minecraft:item_name": "[{\"translate\": \"item.combatplus.sickle\", \"with\": [{\"translate\": \"item.combatplus.iron\"}]}]",
+                "minecraft:item_model": "combatplus:item/iron_sickle"
               }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.combatplus.modified_cooldown",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "translate": "lore.combatplus.added_by",
-                  "color": "blue",
-                  "italic": false
-                }
+                {"translate": "lore.combatplus.modified_cooldown","color": "gray","italic": false},
+                {"translate": "lore.combatplus.added_by","color": "blue","italic": false}
               ]
             }
           ]

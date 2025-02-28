@@ -9,42 +9,23 @@
           "name": "minecraft:diamond_axe",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.combatplus.hammer",
-                "color": "white",
-                "italic": false,
-                "with": [
-                  {
-                    "translate": "item.combatplus.diamond"
-                  }
-                ]
-              }
-            },
-            {
               "function": "minecraft:set_custom_data",
               "tag": "{combatplus:{id:\"diamond_hammer\",style:\"linear\",knockback:1b}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6420044
+                "minecraft:item_name": "[{\"translate\": \"item.combatplus.hammer\", \"with\": [{\"translate\": \"item.combatplus.diamond\"}]}]",
+                "minecraft:item_model": "combatplus:item/diamond_hammer",
+                "!minecraft:tool": {}
               }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.combatplus.modified_cooldown",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "translate": "lore.combatplus.added_by",
-                  "color": "blue",
-                  "italic": false
-                }
+                {"translate": "lore.combatplus.modified_cooldown","color": "gray","italic": false},
+                {"translate": "lore.combatplus.added_by","color": "blue","italic": false}
               ]
             }
           ]

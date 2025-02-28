@@ -9,42 +9,22 @@
           "name": "minecraft:stone_sword",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.combatplus.sickle",
-                "color": "white",
-                "italic": false,
-                "with": [
-                  {
-                    "translate": "item.combatplus.stone"
-                  }
-                ]
-              }
-            },
-            {
               "function": "minecraft:set_custom_data",
               "tag": "{combatplus:{id:\"stone_sickle\",style:\"linear\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6420027
+                "minecraft:item_name": "[{\"translate\": \"item.combatplus.sickle\", \"with\": [{\"translate\": \"item.combatplus.stone\"}]}]",
+                "minecraft:item_model": "combatplus:item/stone_sickle"
               }
             },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.combatplus.modified_cooldown",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "translate": "lore.combatplus.added_by",
-                  "color": "blue",
-                  "italic": false
-                }
+                {"translate": "lore.combatplus.modified_cooldown","color": "gray","italic": false},
+                {"translate": "lore.combatplus.added_by","color": "blue","italic": false}
               ]
             }
           ]

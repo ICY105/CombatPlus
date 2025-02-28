@@ -18,3 +18,4 @@ execute store result storage combatplus:temp item.components."minecraft:damage" 
 data modify entity @s item set from storage combatplus:temp item
 
 data modify entity @s transformation merge value {scale:[0.75,0.75,0.75],left_rotation:[0.0, 0.8, 0.5, 0.6]}
+data merge entity @s {teleport_duration: 1, brightness:{sky:15,block:15}}

@@ -6,3 +6,6 @@ execute unless score @s combatplus.uuid matches -2147483648.. store result score
 tag @s remove combatplus.cooldown_triggered
 execute if items entity @s weapon.mainhand *[minecraft:custom_data~{combatplus:{}}] run function combatplus:player/weapon_tick
 execute if entity @s[tag=combatplus.active_cooldown] unless items entity @s weapon.mainhand *[minecraft:custom_data~{combatplus:{}}] run function combatplus:player/weapon_end
+
+# scoreboards
+execute if score @s combatplus.throw_delay matches 1.. run scoreboard players remove @s combatplus.throw_delay 1

@@ -1,5 +1,7 @@
 {
-    "text.combatplus.resourcepack": "",
+  "text.combatplus.resourcepack": "",
+  
+	"item.combatplus.arc_star":"Arc Star",
 	
 	"item.combatplus.katana":"%s Katana",
 	"item.combatplus.knife":"%s Knife",
@@ -8,7 +10,6 @@
 	"item.combatplus.sickle":"%s Sickle",
 	"item.combatplus.mace":"%s Mace",
 	"item.combatplus.hammer":"%s Hammer",
-	"item.combatplus.arc_star":"%s Arc Star",
 	
 	"item.combatplus.wooden":"Wooden",
 	"item.combatplus.golden":"Golden",
@@ -29,6 +30,5 @@
 	"lore.combatplus.damage_combo": "Combo Damage",
 	"lore.combatplus.range_cooldown": "Range Cooldown",
 	"lore.combatplus.no_cooldown": "No Cooldown",
-	"lore.combatplus.modified_cooldown": "Linear Cooldown",
-	"lore.combatplus.modified_kb": "+Knockback"
+	"lore.combatplus.modified_cooldown": "Linear Cooldown"
 }

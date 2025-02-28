@@ -4,6 +4,7 @@ scoreboard objectives add combatplus.data dummy
 scoreboard objectives add combatplus.uuid dummy
 scoreboard objectives add combatplus.cooldown dummy
 scoreboard objectives add combatplus.cooldown.pause dummy
+scoreboard objectives add combatplus.throw_delay dummy
 
 # constants
 scoreboard players set #cons.2 combatplus.data 2

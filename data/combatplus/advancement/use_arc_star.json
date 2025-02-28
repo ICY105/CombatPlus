@@ -1,0 +1,21 @@
+{
+  "parent": "mechanization:mechanization",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:poisonous_potato",
+          "predicates": {
+            "minecraft:custom_data": {
+              "combatplus": {"id": "arc_star"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "combatplus:player/throw_arc_star"
+  }
+}

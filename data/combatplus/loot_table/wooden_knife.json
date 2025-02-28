@@ -18,6 +18,7 @@
                 "minecraft:item_name": "[{\"translate\": \"item.combatplus.knife\", \"with\": [{\"translate\": \"item.combatplus.wooden\"}]}]",
                 "minecraft:item_model": "combatplus:item/wooden_knife",
                 "minecraft:max_damage": 30,
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "bow"},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {

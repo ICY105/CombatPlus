@@ -18,6 +18,7 @@
                 "minecraft:item_name": "[{\"translate\": \"item.combatplus.knife\", \"with\": [{\"translate\": \"item.combatplus.golden\"}]}]",
                 "minecraft:item_model": "combatplus:item/golden_knife",
                 "minecraft:max_damage": 16,
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "bow"},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {

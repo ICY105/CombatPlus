@@ -1,0 +1,28 @@
+{
+  "parent": "mechanization:mechanization",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:netherite_sword",
+            "minecraft:diamond_sword",
+            "minecraft:iron_sword",
+            "minecraft:stone_sword",
+            "minecraft:golden_sword",
+            "minecraft:wooden_sword"
+          ],
+          "predicates": {
+            "minecraft:custom_data": {
+              "combatplus": {"knife": 1}
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "combatplus:player/throw_knife"
+  }
+}

@@ -1,28 +1,41 @@
 
+# get style
+scoreboard players set #style combatplus.data 0
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{combatplus:{style:"linear"}}] run scoreboard players set #style combatplus.data 1
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{combatplus:{style:"decay"}}] run scoreboard players set #style combatplus.data 2
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{combatplus:{style:"combo"}}] run scoreboard players set #style combatplus.data 3
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{combatplus:{style:"range"}}] run scoreboard players set #style combatplus.data 4
+
+execute if score #style combatplus.data matches 0 if entity @s[tag=combatplus.active_cooldown] run function combatplus:player/weapon_end
+execute if score #style combatplus.data matches 0 run return 0
+
+# tag
 tag @s add combatplus.active_cooldown
 
+# process slot change
+execute store result score #slot combatplus.data run data get entity @s SelectedItemSlot
+execute unless score @s combatplus.data = #slot combatplus.data run scoreboard players set @s combatplus.cooldown 0
+scoreboard players operation @s combatplus.data = #slot combatplus.data
+
 # get attack speed
-attribute @s minecraft:generic.attack_speed modifier remove dd087eab-976d-41a5-a84b-9fdee0fdf97f
-execute store result score #attack_speed combatplus.data run attribute @s minecraft:generic.attack_speed get 75
-attribute @s minecraft:generic.attack_speed modifier add dd087eab-976d-41a5-a84b-9fdee0fdf97f "generic.attack_speed" 1024 add_value
+attribute @s minecraft:attack_speed modifier remove combatplus:max_attack_speed
+execute store result score #attack_speed combatplus.data run attribute @s minecraft:attack_speed get 75
+attribute @s minecraft:attack_speed modifier add combatplus:max_attack_speed 1024 add_value
 
 # get stats
-execute store result score #knockback combatplus.data run data get storage combatplus:temp item.components."minecraft:custom_data".combatplus.knockback
-
-scoreboard players set #style combatplus.data 0
-execute if data storage combatplus:temp item.components."minecraft:custom_data".combatplus{style:"linear"} run scoreboard players set #style combatplus.data 1
-execute if data storage combatplus:temp item.components."minecraft:custom_data".combatplus{style:"decay"} run scoreboard players set #style combatplus.data 2
-execute if data storage combatplus:temp item.components."minecraft:custom_data".combatplus{style:"combo"} run scoreboard players set #style combatplus.data 3
-
 execute if score #style combatplus.data matches 1 run scoreboard players operation #attack_speed combatplus.data *= #cons.9 combatplus.data
 execute if score #style combatplus.data matches 1 run scoreboard players operation #attack_speed combatplus.data /= #cons.10 combatplus.data
 
 execute if score #style combatplus.data matches 2 run scoreboard players operation #attack_speed combatplus.data /= #cons.2 combatplus.data
 
+execute if score #style combatplus.data matches 4 run scoreboard players operation #attack_speed combatplus.data *= #cons.8 combatplus.data
+execute if score #style combatplus.data matches 4 run scoreboard players operation #attack_speed combatplus.data /= #cons.10 combatplus.data
+
 # cooldown
 execute if score @s combatplus.cooldown.pause matches 1.. run scoreboard players remove @s combatplus.cooldown.pause 1
 
 execute unless score @s combatplus.cooldown.pause matches 1.. if score #style combatplus.data matches 1..2 run scoreboard players operation @s combatplus.cooldown += #attack_speed combatplus.data
+execute unless score @s combatplus.cooldown.pause matches 1.. if score #style combatplus.data matches 4 run scoreboard players operation @s combatplus.cooldown += #attack_speed combatplus.data
 execute unless score @s combatplus.cooldown.pause matches 1.. if score #style combatplus.data matches 3 run scoreboard players operation @s combatplus.cooldown -= #attack_speed combatplus.data
 
 execute if score @s combatplus.cooldown matches ..0 run scoreboard players set @s combatplus.cooldown 0
@@ -48,29 +61,15 @@ execute if score @s combatplus.cooldown matches 100..199 run title @s title {"te
 execute if score @s combatplus.cooldown matches 0..99 run title @s title {"text":"\uef10", "font":"combatplus:cooldown"}
 
 # damage modification
-attribute @s minecraft:generic.attack_damage modifier remove 898b7201-91d6-4d1e-9996-d3646f2b0d21
-attribute @s minecraft:generic.attack_damage modifier remove 5fae72dd-d739-4d50-9fbf-5ac262cb9356
+attribute @s minecraft:attack_damage modifier remove combatplus:damage_modifer
+attribute @s minecraft:entity_interaction_range modifier remove combatplus:range_modifier
 
-scoreboard players operation #remainder combatplus.data = @s combatplus.cooldown
-scoreboard players operation #remainder combatplus.data %= #cons.150 combatplus.data
+scoreboard players set #cooldown combatplus.data 1500
+scoreboard players operation #cooldown combatplus.data -= @s combatplus.cooldown
 
-execute if score @s combatplus.cooldown matches 0..149 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.9 add_multiplied_base
-execute if score @s combatplus.cooldown matches 150..299 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.8 add_multiplied_base
-execute if score @s combatplus.cooldown matches 300..449 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.7 add_multiplied_base
-execute if score @s combatplus.cooldown matches 450..599 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.6 add_multiplied_base
-execute if score @s combatplus.cooldown matches 600..749 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.5 add_multiplied_base
-execute if score @s combatplus.cooldown matches 750..899 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.4 add_multiplied_base
-execute if score @s combatplus.cooldown matches 900..1049 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.3 add_multiplied_base
-execute if score @s combatplus.cooldown matches 1050..1199 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.2 add_multiplied_base
-execute if score @s combatplus.cooldown matches 1200..1349 run attribute @s minecraft:generic.attack_damage modifier add 898b7201-91d6-4d1e-9996-d3646f2b0d21 "generic.attack_damage" -0.1 add_multiplied_base
+execute if score #cooldown combatplus.data matches 1496.. run scoreboard players set #cooldown combatplus.data 1495
 
-execute if score @s combatplus.cooldown matches 0..1499 if score #remainder combatplus.data matches 0..14 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.09 add_multiplied_base
-execute if score #remainder combatplus.data matches 15..29 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.08 add_multiplied_base
-execute if score #remainder combatplus.data matches 30..44 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.07 add_multiplied_base
-execute if score #remainder combatplus.data matches 45..59 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.06 add_multiplied_base
-execute if score #remainder combatplus.data matches 60..74 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.05 add_multiplied_base
-execute if score #remainder combatplus.data matches 75..89 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.04 add_multiplied_base
-execute if score #remainder combatplus.data matches 90..104 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.03 add_multiplied_base
-execute if score #remainder combatplus.data matches 105..119 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.02 add_multiplied_base
-execute if score #remainder combatplus.data matches 120..134 run attribute @s minecraft:generic.attack_damage modifier add 5fae72dd-d739-4d50-9fbf-5ac262cb9356 "generic.attack_damage" -0.01 add_multiplied_base
-
+data modify storage combatplus:temp obj set value {value: 0}
+execute store result storage combatplus:temp obj.value double 0.000666666666667 run scoreboard players get #cooldown combatplus.data
+execute if score #style combatplus.data matches 1..3 run function combatplus:player/apply_attack_damage_attribute with storage combatplus:temp obj
+execute if score #style combatplus.data matches 4 run function combatplus:player/apply_range_attribute with storage combatplus:temp obj

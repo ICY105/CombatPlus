@@ -4,7 +4,6 @@ scoreboard objectives add combatplus.data dummy
 scoreboard objectives add combatplus.uuid dummy
 scoreboard objectives add combatplus.cooldown dummy
 scoreboard objectives add combatplus.cooldown.pause dummy
-scoreboard objectives add combatplus.coas minecraft.used:minecraft.carrot_on_a_stick
 
 # constants
 scoreboard players set #cons.2 combatplus.data 2

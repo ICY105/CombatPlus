@@ -43,22 +43,22 @@ execute if score @s combatplus.cooldown matches 1500.. run scoreboard players se
 
 # cooldown bar
 title @s times 0t 2t 0t
-execute if score @s combatplus.cooldown matches 1500.. run title @s title {"text":"\uef1f", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 1400..1499 run title @s title {"text":"\uef1e", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 1300..1399 run title @s title {"text":"\uef1d", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 1200..1299 run title @s title {"text":"\uef1c", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 1100..1199 run title @s title {"text":"\uef1b", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 1000..1099 run title @s title {"text":"\uef1a", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 900..999 run title @s title {"text":"\uef19", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 800..899 run title @s title {"text":"\uef18", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 700..799 run title @s title {"text":"\uef17", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 600..699 run title @s title {"text":"\uef16", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 500..599 run title @s title {"text":"\uef15", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 400..499 run title @s title {"text":"\uef14", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 300..399 run title @s title {"text":"\uef13", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 200..299 run title @s title {"text":"\uef12", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 100..199 run title @s title {"text":"\uef11", "font":"combatplus:cooldown"}
-execute if score @s combatplus.cooldown matches 0..99 run title @s title {"text":"\uef10", "font":"combatplus:cooldown"}
+execute if score @s combatplus.cooldown matches 1500.. run title @s title {"text":"\uef1f", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 1400..1499 run title @s title {"text":"\uef1e", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 1300..1399 run title @s title {"text":"\uef1d", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 1200..1299 run title @s title {"text":"\uef1c", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 1100..1199 run title @s title {"text":"\uef1b", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 1000..1099 run title @s title {"text":"\uef1a", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 900..999 run title @s title {"text":"\uef19", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 800..899 run title @s title {"text":"\uef18", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 700..799 run title @s title {"text":"\uef17", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 600..699 run title @s title {"text":"\uef16", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 500..599 run title @s title {"text":"\uef15", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 400..499 run title @s title {"text":"\uef14", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 300..399 run title @s title {"text":"\uef13", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 200..299 run title @s title {"text":"\uef12", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 100..199 run title @s title {"text":"\uef11", "font":"combatplus:cooldown", "shadow_color": 0}
+execute if score @s combatplus.cooldown matches 0..99 run title @s title {"text":"\uef10", "font":"combatplus:cooldown", "shadow_color": 0}
 
 # damage modification
 attribute @s minecraft:attack_damage modifier remove combatplus:damage_modifer
